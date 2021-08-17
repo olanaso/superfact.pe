@@ -1,0 +1,385 @@
+:root
+{
+    --textcolor: #202647;
+    --whitecolor: #fff;
+    --darkredcolor: #DE1423;
+    --parrafo: #354455;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--textcolor);
+}
+p{
+    color: var(--parrafo);
+}
+
+/*********************************
+ Main Navigation
+*********************************/
+
+.main_nav ul li a
+{
+    color: var(--whitecolor);
+}
+
+/*********************************
+ Header
+*********************************/
+
+.header
+{
+    background-color: var(--darkredcolor);
+    opacity: 0.94;
+}
+.header.scrolled
+{
+    background-color: var(--darkredcolor);
+}
+
+/*********************************
+ Hero
+*********************************/
+
+.hero_slider_nav div i
+{
+    color: var(--darkredcolor);
+}
+
+/*cambia el color de la flecha derecha e izquierda del inicio*/
+.hero_slider_nav div::before
+{
+    background: red;
+}
+
+/*********************************
+ Services Slider
+*********************************/
+
+/*borde*/
+.services_slider .owl-item.center .services_item_inner
+{
+    border: 5px solid #D51528;
+}
+/** emogi active color*/
+.services_slider .owl-item.center .services_item_inner i
+{
+    color: #D51528;
+}
+/*button active*/
+.services_item_inner .service_item_button
+{
+    background: transparent;
+    border: solid 2px var(--darkredcolor);
+}
+.services_item_inner .service_item_button a
+{
+    color: red;
+}
+.services_item_inner .service_item_button a:hover
+{
+    color: white;
+}
+/*button active hover*/
+.services_item_inner .service_item_button:hover
+{
+    background: var(--darkredcolor);
+}
+/*emogi*/
+.service_item_icon .icon
+{
+    color: #D51528;
+}
+/* arrows direction color*/
+.services_slider_nav:hover i
+{
+	color: #D51528;
+}
+.services_slider .owl-item.center .services_item .services_item_inner h2, .services_slider .owl-item.center .services_item .services_item_inner h1 
+{
+    color: black; 
+}
+.services_slider .owl-item.center .services_item .services_item_inner p
+{
+    color: #181F27;
+}
+
+/*background*/
+.services_slider .owl-item.center .services_item_inner 
+{
+    background: #fff;
+}
+
+/*********************************
+ owl carouel 
+*********************************/
+
+/*** modificar los colores del html ----- inicio de la imagennn y facturacipon electronica*/
+.owl-carousel .owl-item span
+{
+    color: white;
+}
+
+/*********************************
+ Buttons
+*********************************/
+.button{
+    border: solid 3px #B31A25;
+    color: #B31A25;
+}
+.button:hover{
+    background: #B31A25;
+    color: white;
+}
+.button a{
+    color: #B31A25;
+}
+#divEnviarInfo .button{
+    background: #B31A25;
+    color: white;
+}
+#divEnviarInfo .button:hover{
+    background: red;
+    border: red;
+}
+/*********************************
+ Footer
+*********************************/
+.footer_logo a
+{
+    color: white;
+}
+.footer_social ul li a i
+{
+    color: #c4c4c4;
+}
+
+.footer_social ul li a:hover i
+{
+    color: red;
+}
+body > div > footer {
+    background: #181F27;
+}
+body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
+{
+    color: white
+}
+.footer_col_title
+{
+    color: white
+}
+.footer_col ul li a:hover
+{
+    color: white;
+}
+
+/*********************************
+ owl carouel 
+*********************************/
+
+/*------contactanos -----------*/
+#divContactanos
+{
+    background-color: #273240;
+}
+.newsletter_title h1
+{
+    color: white;
+}
+.newsletter_title span
+{
+    color: #909090;
+}
+#correoSolicitud
+{
+    background-color: white;
+}
+.newsletter_email
+{
+    color: black;
+}
+
+/*********************************
+ Background Registrate/Consultar/Inisiar sesión
+*********************************/
+
+.bg-gradient-primary
+{
+    background: #D51528
+}
+
+/*********************************
+ Menú
+*********************************/
+
+.menu_container
+{
+    width: 250px;
+    background: #181F27;
+}
+.menu_close:hover i
+{
+    color: red;
+}
+.menu ul
+{
+    padding-right: 0px;
+    list-style-type: none;
+}
+.menu ul li
+{
+    position: relative;
+    display: block;
+    text-align: right;
+    animation: all 10s;
+}
+.menu ul li a
+{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 15px 20px;
+    color: var(--whitecolor);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu ul li a::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 250ms ease;
+    z-index: -1;
+}
+.menu ul li a:hover
+{
+    color: var(--darkredcolor);
+    transition: .8s;
+}
+.menu ul li a:hover::before
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--whitecolor);
+    transition: width 250ms ease;
+}
+.hamburger_container i:hover
+{
+    color: #181F27;
+}
+
+/*********************************
+ Button Registrate/Consultar/Inisiar sesión
+*********************************/
+
+.btn-primary   
+{
+    color: white;
+    background-color: #B31A25;
+    border: none;
+}
+.btn-primary:hover
+{
+    background-color: red;
+}
+.next_section_scroll:hover i
+{
+	color:  red;
+}
+
+/*cheked*/
+.custom-control-input:checked~.custom-control-label::before 
+{
+    border: none;
+    background-color: #f31b07d4;
+}
+.v_slider .slick-dots li.slick-active button{
+    background: red;
+}
+/* responsive menu*/
+@media only screen and (max-width: 400px)
+{
+    .menu_container{
+        width:100%
+    }
+}
+
+/* links red color*/
+a{
+    color: #f31b07d4;
+}
+a:hover{
+    color: red;
+}
+@media only screen and (max-width: 450px){
+    .item_1 span:nth-child(3) {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .item_1 span:nth-child(3) {
+        font-size: 28px;
+    }
+    .input-group{
+        display: block;
+    }
+    .input-group input, button{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/*Modificaciones*/
+
+body > div > footer {
+    background: #181F27
+}
+
+body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p{
+    color: white
+}
+.footer_col_title{
+    color: white
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 899px;
+    height: auto;
+    text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 10000;
+    background: #FBE9E9;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 20px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #E0212F;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.services {
+    color: #000;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}

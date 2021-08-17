@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Mirrored from fasteinvoice.com/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jun 2019 03:46:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="google-site-verification" content="W46S8OVKLysX4hYXvU6gvmDh21GKLU9TE6HWma0Ob7g" />
+
+    <title>FastEInvoice - Login</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!link href="css/estilos.html" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <!--div class="col-lg-6 d-none d-lg-block bg-login-image">
+                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/portada_login.svg" alt="">
+              </div-->
+              <div class="col-lg-6 d-none d-lg-block" style="background-color: #f4f4f4;">
+                <div class="container h-100">
+                    <div class="row align-items-center h-100">
+                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/portada_login.svg" alt="">
+                    </div>
+                </div>
+                <a class="linkhome" href="index.html">
+                  <div style="margin-top: -100px;text-align: center;color: red;">
+                    <div class="d-flex align-items-center justify-content-center" style="font-size: 1.5rem;font-weight: 800;line-height: 25px;">
+                      
+                      <div class="sidebar-brand-icon">
+                        <i class="fas fa fa-bolt fa-flip-horizontal" style="font-size: 2.8rem;"></i>
+                      </div>
+                      <div class="sidebar-brand-text mx-3" style="margin-left: 0px!important;">
+                        <div style="display: inline-flex;">
+                          <div style="font-size: 3.5rem;font-weight: 300;padding-top: 12px;">|</div>
+                          <div style="text-align: left;font-family: Nunito,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,&quot;Helvetica Neue&quot;,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;,&quot;Noto Color Emoji&quot;;">Super<br>FACT</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--<span style="font-weight: 600;text-align: center;">Facturación electrónica</span>-->
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                    <br>
+                    <br>
+                  <div class="text-center">
+                    <h1 class="h1 text-gray-900 mb-4">Bienvenido!</h1>
+                  </div>
+                    <br>
+                    <br>
+                    <br>
+                  <form class="user" id="frmIniciarSesion" action="https://fasteinvoice.com/controlador/contUsuario.php?funcion=login" onsubmit="return false;">
+                    <input type="hidden" name="module" value="">
+                    <div class="form-group">
+                      <input type="text" name="user" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ingresa usuario o RUC">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="pass" class="form-control form-control-user" id="exampleInputPassword" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label class="custom-control-label" for="customCheck">Recuerdame</label>
+                      </div>
+                    </div>
+                      <div id="btnIngresar">
+                        <button type="button" onclick="enviarForm('frmIniciarSesion','btnIngresar')" class="btn btn-primary btn-user btn-block">Ingresar</button>
+                      </div>
+
+                    <!--hr>
+                    <a href="index.html" class="btn btn-google btn-user btn-block">
+                      <i class="fab fa-google fa-fw"></i> Login with Google
+                    </a>
+                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                      <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                    </a-->
+                  </form>
+                  <hr>
+                  <!--div class="text-center">
+                    <a class="small" href="forgot-password.html">Olvidó su contraseña?</a>
+                  </div-->
+                  <div class="text-center">
+                    <a class="small" href="consultar.html">Consultar mi comprobante!</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="registrarse.html">Regístrate, y obtén una prueba gratis!</a>
+                  </div>
+                </div>
+    			       <p style="text-align: right;font-size: 0.7rem;line-height: 11px;padding-right: 10px;">¿Tienes dudas o consultas?<br>Escríbenos a <b><a href="mailto:administrador@fasteinvoice.com">administrador@fasteinvoice.com</b></a> o <b><a href="https://wa.me/51923556614?text=Solicito%20mas%20informacion%20sobre%20las%20tarifas%20del%20servicio%20de%20Facturacion%20electronica">923&nbsp;556&nbsp;614</b></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/bootstrap-notify.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+
+<!-- Mirrored from fasteinvoice.com/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jun 2019 03:46:31 GMT -->
+</html>
