@@ -2,10 +2,9 @@
 {
     --textcolor: #202647;
     --whitecolor: #fff;
-    --darkredcolor: #DE1423;
+    --darkredcolor: #F10A50;
     --parrafo: #354455;
 }
-
 
 h1, h2, h3, h4, h5, h6{
     color: var(--textcolor);
@@ -21,6 +20,10 @@ p{
 .main_nav ul li a
 {
     color: var(--whitecolor);
+}
+.main_nav ul li a:hover
+{
+    color: #DFE351;
 }
 
 /*********************************
@@ -149,6 +152,9 @@ p{
 {
     color: white;
 }
+.footer_logo a:hover{
+    color: #F10A50;
+}
 .footer_social ul li a i
 {
     color: #c4c4c4;
@@ -156,7 +162,7 @@ p{
 
 .footer_social ul li a:hover i
 {
-    color: red;
+    color: #F10A50;
 }
 body > div > footer {
     background: #181F27;
@@ -220,7 +226,7 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
 }
 .menu_close:hover i
 {
-    color: red;
+    color: #F10A50;
 }
 .menu ul
 {
@@ -337,18 +343,22 @@ a:hover{
 
 /*Modificaciones*/
 
-body > div > footer {
+body > div > footer 
+{
     background: #181F27
 }
 
-body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p{
+body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
+{
     color: white
 }
-.footer_col_title{
+.footer_col_title
+{
     color: white
 }
 
-#owl-demo .item img{
+#owl-demo .item img
+{
     display: block;
     width: 899px;
     height: auto;
@@ -358,7 +368,8 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p{
   margin-right: auto;
 }
 
-.owl-theme .owl-nav {
+.owl-theme .owl-nav 
+{
     margin-top: 10px;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
@@ -366,7 +377,8 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p{
     background: #FBE9E9;
 }
 
-.owl-theme .owl-nav [class*='owl-'] {
+.owl-theme .owl-nav [class*='owl-'] 
+{
     color: #FFF;
     font-size: 20px;
     margin: 5px;
@@ -377,9 +389,145 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p{
     border-radius: 3px;
 }
 
-.services {
+.services 
+{
     color: #000;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/*portada*/
+.portada
+{
+    background: #faebeb;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px 30px 30px 30px;
+    text-align: center;
+    gap: 15px;
+    margin-top: 120px;
+}
+.portada .info .image
+{
+    width: 100%
+}
+.portada .info .image img
+{
+    width: 400px;
+}
+.form
+{
+    position: relative;    
+    width: 70%;
+}
+.form .container
+{
+    padding: 0;
+    padding: 15px 50px;
+    width: 100%;
+    background: #191717;
+    border-radius: 0 0 40px 40px;
+}
+.form .container input
+{
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    padding: 0 15px;
+}
+.form  h2
+{
+    position: relative;
+    background: #F10A50;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    border-radius: 40px 40px 0 0;
+}
+.form::before   
+{
+    content: '';  
+    position: absolute;
+    background-image: url(../images/fond-form.png);
+    left: 20px;
+    top: -20px;
+    width: 100%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.portada .info .logo
+{
+    padding: 0;
+}
+.portada #divEnviarInfo
+{
+    padding-bottom: 14px;
+}
+
+#divTarifas > div{
+    margin-top: 0px;
+}
+.form #divEnviarInfo .button{
+    background: #32A193;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.benefits{
+    width: 100%;
+    background: #131313;
+}
+
+.benefits h2{
+    color: #F10A50;
+    padding-bottom: 35px;
+}
+.benefits .content{
+   padding: 20px 45px;
+}
+.benefits .content .list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    gap: 20px;
+}
+.benefits .content .icon{
+    text-align: center;
+    width: 100%;
+}
+.benefits p{
+    color: white;
+    margin-top: 16px;
+}
+.benefits .icon img{
+    width: 120px;
+    height: 120px;
+}
+
+.electronic_billing{
+    padding: 20px 45px;
+}
+.electronic_billing .content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    margin: auto;
+}
+.electronic_billing .content-info{
+    margin: auto;
+}
+.electronic_billing li{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.electronic_billing .content-info div{
+    text-align: center;
+}
+.electronic_billing span{
+    display: block; 
+    text-align: center;
 }

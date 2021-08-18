@@ -49,14 +49,20 @@
             <!-- Navigation -->
             <nav class="main_nav justify-self-end text-right">
                 <ul>
+
                     <li class="active"><a href="#divTarifas">Inicio</a></li>
-               
-                    
+                    <li class="active"><a href="#divBeneficios">Beneficios</a></li>
+                    <li class="active"><a href="#divProductos">Productos</a></li>
+                    <li class="active"><a href="#divBlog">Blog</a></li>
+                    <li class="active"><a href="#divContactanos">Contáctanos</a></li>
+                    <!--
+                    <li class="active"><a href="#divTarifas">Inicio</a></li>
                     <li class="active"><a href="registrarse.html">Beneficios</a></li>
                     <li class="active"><a href="consultar.html">Equipos</a></li>
-                     <li class="active"><a href="consultar.html">Legalidad</a></li>
+                    <li class="active"><a href="consultar.html">Legalidad</a></li>
                     <li class="active"><a href="login.html">Blog</a></li>
                     <li class="active"><a href="#divContactanos">Contáctanos</a></li>
+                    -->
                 </ul>
             </nav>
             <!-- Hamburger -->
@@ -70,14 +76,105 @@
                 <div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
                 <ul class="menu_mm">
                     <li class="menu_mm active"><a href="#">Inicio</a></li>
+                    <li class="active"><a href="#divBeneficios">Beneficios</a></li>
+                    <li class="active"><a href="#divProductos">Productos</a></li>
+                    <li class="active"><a href="#divBlog">Blog</a></li>
+                    <li class="active"><a href="#divContactanos">Contáctanos</a></li>
+                    <!--
                     <li class="menu_mm"><a href="#divTarifas">Productos</a></li>
                     <li class="menu_mm"><a href="#divContactanos">Contáctanos</a></li>
                     <li class="menu_mm"><a href="registrarse.html">Regístrate</a></li>
                     <li class="menu_mm"><a href="consultar.html">Consultar</a></li>
                     <li class="menu_mm"><a href="login.html">Iniciar Sesión</a></li>
+                    -->
                 </ul>
             </div>
         </div>
+
+        <!-- portada -->
+
+        <div class="portada">
+          <div class="info">
+            <!--logo-->
+            
+            <!--image-->
+            <div class="image">
+              <img src="images/Group 274.png" alt="">
+            </div>
+
+          </div>
+
+          <!-- form-->
+          <div class="form">
+            <h2>COTIZAR SERVICIO</h2>
+            <div class="container">
+              <form id="frmEnviarInfo" action="https://fasteinvoice.com/controlador/contEmpresa.php?funcion=enviarinformacion" onsubmit="return false;">
+                <input type="text" placeholder="Nombres y Apellidos" required="required" name="nombre" id="nombreCompleto">
+                <input type="tel" placeholder="Telefonos" requerid="required" data-error="valid phone number" name="telefeno" id="telefono">
+                <input type="email" placeholder="correo" required="required" data-error="Valid email address is required." name="correo" id="correoSolicitud">
+                <input type="text" placeholder="Mensaje" required="requerid" name="message" name="messageinput" id="messageinput">
+                <div id="divEnviarInfo">
+                  <button id="newsletter_form_submit" type="button" class="button newsletter_submit_button trans_200">
+                    Contactar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Benefits -->
+        <div class="benefits">
+            <div class="content">
+                <h2>Beneficios para tu negocio</h2>
+                <div class="list">
+                    <div class="icon">
+                      <img src="./images/svg/cloud.svg" alt="">
+                      <p>Reportes en la Nube</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./images/svg/envio.svg" alt="">
+                      <p>Envio automáticos calendarizados</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./images/svg/check.svg" alt="">
+                      <p>Reportes en la Nube</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./images/svg/agente.svg" alt="">
+                      <p>Reportes en la Nube</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./images/svg/actualization.svg" alt="">
+                      <p>Reportes en la Nube</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Facturación-->
+        <div class="electronic_billing">
+            <h2>Facturación electrónica ilimitada</h2>
+            <div class="content">
+                <div class="content-info">
+                  Emite boletas y facturas electrónicas los 7 días de la semana.
+                  <ul>
+                    <li>Somos Proveedor de Servicios Electronicos - PSE</li>
+                    <li>Contamos con Operador de Servicios Eletronicos - OSE</li>
+                  </ul>
+                  <div>
+                      <img src="./images/sunat.png" alt="">
+                      <span>Resolución Nº 244-005-0000177/SUNAT</span>
+                  </div>
+                </div>
+                <div class="content-image">
+                  <img src="./images/image 37.png" alt="">
+                </div>
+            </div>
+        </div>
+
         <!-- Home -->
         <div class="services" id="divTarifas" style="background: #FBE9E9">
             <div class="h_slider_container services_slider_container">
