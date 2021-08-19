@@ -374,7 +374,7 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
     text-align: center;
     -webkit-tap-highlight-color: transparent;
     z-index: 10000;
-    background: #FBE9E9;
+    background: transparent;
 }
 
 .owl-theme .owl-nav [class*='owl-'] 
@@ -402,7 +402,7 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
 {
     background: #faebeb;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     padding: 40px 30px 30px 30px;
     text-align: center;
     gap: 15px;
@@ -418,8 +418,9 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
 }
 .form
 {
-    position: relative;    
-    width: 70%;
+    position: relative; 
+    width: auto;
+    margin: auto;   
 }
 .form .container
 {
@@ -476,12 +477,11 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
     width: 100%;
     height: 40px;
 }
-
+/*beneficios*/
 .benefits{
     width: 100%;
     background: #131313;
 }
-
 .benefits h2{
     color: #F10A50;
     padding-bottom: 35px;
@@ -517,17 +517,141 @@ body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
     gap: 30px;
     margin: auto;
 }
-.electronic_billing .content-info{
+.electronic_billing .content_info{
     margin: auto;
 }
 .electronic_billing li{
     list-style-type: disc;
     margin-left: 30px;
 }
-.electronic_billing .content-info div{
+.electronic_billing .content_info div{
     text-align: center;
 }
 .electronic_billing span{
     display: block; 
     text-align: center;
+}
+.electronic_billing .content_image{
+    margin: auto;
+}
+.electronic_billing .content_image img{
+    width: 100%;
+}
+/*Productos Digitales y Equipos*/
+#divTarifas{
+    background-color: #FBE9E9;
+    padding: 20px 40px;
+    background-image: url(../images/svg/productos-vector.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/*Punto de ventas*/
+
+.point_of_sales h2{
+    color: #E90A4D;
+}
+.point_of_sales span{
+    color: #BCE90A;
+}
+.point_of_sales p{
+    color: white;
+}
+.point_of_sales .content_info{
+    display: grid;
+    padding: 20px 40px 0px 40px;
+    background: #131313;
+    height: 230px;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.point_of_sales .content_info img{
+    position: relative;
+    width: 380px;
+    height: 400px;
+    top: -185px;
+}
+.point_of_sales .owl-theme .owl-nav 
+{
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 10000;
+    background: transparent;
+}
+
+.point_of_sales .owl-theme .owl-nav [class*='owl-'] 
+{
+    color: #FFF;
+    font-size: 20px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #E0212F;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.point_of_sales .content_info_img{
+    margin: auto;
+}
+
+/*responsive*/
+@media only screen and (max-width: 789px){
+    .portada{
+        grid-template-columns: 1fr;
+    }
+    .benefits .content .list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .electronic_billing .content{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 710px){
+    .point_of_sales .content_info{
+        grid-template-columns: 1fr;
+    }
+    /*
+    .point_of_sales .content_info img{
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .point_of_sales .content_info{
+        height: auto;
+    }*/
+    .point_of_sales .content_info_img{
+        display: none;
+    }
+    .point_of_sales .content_info{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    .benefits .content .list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 481px){
+    .portada{
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .portada .info .image img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+	.benefits .content .list{
+        grid-template-columns: 1fr;
+    }
+    /*
+    .point_of_sales .content_info img{
+        display: none;
+    }*/
 }
