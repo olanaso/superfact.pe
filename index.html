@@ -1,414 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Mirrored from fasteinvoice.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jun 2019 03:46:10 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-
 <head>
-    <title>SuperFACT - Facturación Electronica</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Facturacion Electronica FastEInvoice SUNAT">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <meta name="google-site-verification" content="W46S8OVKLysX4hYXvU6gvmDh21GKLU9TE6HWma0Ob7g" />
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
-    <link href="plugins/icon-font/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperFACT - facturación electrónica</title>
     <link rel="stylesheet" href="./styles/style.css">
+
 </head>
-
 <body>
-    <div class="super_container">
-        <!-- Header -->
-        <header class="header d-flex flex-row justify-content-end align-items-center trans_200">
-            <!-- Logo -->
-            <div class="logo mr-auto">
-                <div style="min-width: 210px;text-align: center;color: #FFF;">
-                    <div class="d-flex align-items-center justify-content-center" style="font-size: 1.5rem;font-weight: 800;line-height: 25px;">
-                        <div class="sidebar-brand-icon">
-                            <i class="fas fa fa-bolt fa-flip-horizontal" style="font-size: 2.8rem;"></i>
-                        </div>
-                        <div class="sidebar-brand-text mx-3" style="margin-left: 0px!important;">
-                            <div style="display: inline-flex;">
-                                <div style="font-size: 3.5rem;font-weight: 300;padding-top: 12px;">|</div>
-                                <div style="text-align: left;font-family: Nunito,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,&quot;Helvetica Neue&quot;,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;,&quot;Noto Color Emoji&quot;;">Super<br>FACT</div>
-                            </div>
-                        </div>
-                    </div>
+
+    <!--- Header -->
+    <div class="header">
+        <!--logo-->
+        <div class="header_logo">
+            <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+        </div>
+        <!--navigation-->
+        <nav class="header_navigation">
+            <ul>
+                <li>Inicio</li>
+                <li>Beneficios</li>
+                <li>Productos</li>
+                <li>Blog</li>
+                <li>Contactos</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Cover Page -->
+    <div class="coverPage">
+        <div class="coverPage_info">
+            <div class="coverPage_info_text">
+                <h2>SISTEMA DE VENTAS PARA TODO TIPO DE NEGOCIO</h2>
+                <p><b>Mejor gestión más ventas, con un sistema de Ventas hazlo posible</b></p>
+            </div>
+            <div class="coverPage_img">
+                <img src="./images/computer.png" alt="">
+            </div>
+        </div>
+        
+        <div class="coverPage_form">
+            <div class="form">
+                <h2>COTIZAR SERVICIO</h2>
+                <form action="">
+                    <input type="text" placeholder="Nombres y Apellidos" required="required" name="nombre" id="nombre">
+                    <input type="tel" placeholder="Telefonos" requerid="required" data-error="valid phone number" name="telefeno" id="telefono">
+                    <input type="email" placeholder="correo" required="required" data-error="Valid email address is required." name="correo" id="correo">
+                    <input type="text" placeholder="Mensaje" required="requerid" name="message" name="messageinput" id="messageinput">
+                    <button type="submit">Solicitar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Benefits-->
+    <div class="benefits">
+        <div class="benefits_content">
+            <h2>Beneficios para tu negocio</h2>
+            <div class="benefits_content_list">
+                <div class="icon">
+                  <img src="./images/svg/cloud.svg" alt="">
+                  <p>Reportes en la Nube</p>
+                </div>
+                <div class="icon">
+                  <img src="./images/svg/envio.svg" alt="">
+                  <p>Envio automáticos calendarizados</p>
+                </div>
+                <div class="icon">
+                  <img src="./images/svg/check.svg" alt="">
+                  <p>Sistema completo y Fácil de usar</p>
+                </div>
+                <div class="icon">
+                  <img src="./images/svg/agente.svg" alt="">
+                  <p>Soporte perosnal 24/7</p>
+                </div>
+                <div class="icon">
+                  <img src="./images/svg/actualization.svg" alt="">
+                  <p>Mejoras y actualizaciones continuas</p>
                 </div>
             </div>
-            <!-- Navigation -->
-            <nav class="main_nav justify-self-end text-right">
+        </div>
+    </div>
+
+    <!--Billing-->
+    <div class="billing">
+        <h2>Facturación electrónica ilimitada</h2>
+        <div class="billing_content">
+            <div class="billing_content_info">
+                Emite boletas y facturas electrónicas los 7 días de la semana.
                 <ul>
-
-                    <li class="active"><a href="#divTarifas">Inicio</a></li>
-                    <li class="active"><a href="#divBeneficios">Beneficios</a></li>
-                    <li class="active"><a href="#divProductos">Productos</a></li>
-                    <li class="active"><a href="#divBlog">Blog</a></li>
-                    <li class="active"><a href="#divContactanos">Contáctanos</a></li>
-                    <!--
-                    <li class="active"><a href="#divTarifas">Inicio</a></li>
-                    <li class="active"><a href="registrarse.html">Beneficios</a></li>
-                    <li class="active"><a href="consultar.html">Equipos</a></li>
-                    <li class="active"><a href="consultar.html">Legalidad</a></li>
-                    <li class="active"><a href="login.html">Blog</a></li>
-                    <li class="active"><a href="#divContactanos">Contáctanos</a></li>
-                    -->
-                </ul>
-            </nav>
-            <!-- Hamburger -->
-            <div class="hamburger_container bez_1">
-                <i class="fas fa-bars trans_200"></i>
-            </div>
-        </header>
-        <!-- Menu -->
-        <div class="menu_container">
-            <div class="menu menu_mm text-right">
-                <div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
-                <ul class="menu_mm">
-                    <li class="menu_mm active"><a href="#">Inicio</a></li>
-                    <li class="active"><a href="#divBeneficios">Beneficios</a></li>
-                    <li class="active"><a href="#divProductos">Productos</a></li>
-                    <li class="active"><a href="#divBlog">Blog</a></li>
-                    <li class="active"><a href="#divContactanos">Contáctanos</a></li>
-                    <!--
-                    <li class="menu_mm"><a href="#divTarifas">Productos</a></li>
-                    <li class="menu_mm"><a href="#divContactanos">Contáctanos</a></li>
-                    <li class="menu_mm"><a href="registrarse.html">Regístrate</a></li>
-                    <li class="menu_mm"><a href="consultar.html">Consultar</a></li>
-                    <li class="menu_mm"><a href="login.html">Iniciar Sesión</a></li>
-                    -->
-                </ul>
-            </div>
-        </div>
-
-        <!-- portada -->
-
-        <div class="portada">
-          <div class="info">
-            <!--logo-->
-            
-            <!--image-->
-            <div class="image">
-              <img src="images/Group 274.png" alt="">
-            </div>
-
-          </div>
-
-          <!-- formulario-->
-          <div class="form">
-            <h2>COTIZAR SERVICIO</h2>
-            <div class="container">
-              <form id="frmEnviarInfo" action="https://fasteinvoice.com/controlador/contEmpresa.php?funcion=enviarinformacion" onsubmit="return false;">
-                <input type="text" placeholder="Nombres y Apellidos" required="required" name="nombre" id="nombreCompleto">
-                <input type="tel" placeholder="Telefonos" requerid="required" data-error="valid phone number" name="telefeno" id="telefono">
-                <input type="email" placeholder="correo" required="required" data-error="Valid email address is required." name="correo" id="correoSolicitud">
-                <input type="text" placeholder="Mensaje" required="requerid" name="message" name="messageinput" id="messageinput">
-                <div id="divEnviarInfo">
-                  <button id="newsletter_form_submit" type="button" class="button newsletter_submit_button trans_200">
-                    Contactar
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Beneficios -->
-        <div class="benefits">
-            <div class="content">
-                <h2>Beneficios para tu negocio</h2>
-                <div class="list">
-                    <div class="icon">
-                      <img src="./images/svg/cloud.svg" alt="">
-                      <p>Reportes en la Nube</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./images/svg/envio.svg" alt="">
-                      <p>Envio automáticos calendarizados</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./images/svg/check.svg" alt="">
-                      <p>Reportes en la Nube</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./images/svg/agente.svg" alt="">
-                      <p>Reportes en la Nube</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./images/svg/actualization.svg" alt="">
-                      <p>Reportes en la Nube</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--Facturación-->
-        <div class="electronic_billing">
-            <h2>Facturación electrónica ilimitada</h2>
-            <div class="content">
-                <div class="content_info">
-                  Emite boletas y facturas electrónicas los 7 días de la semana.
-                  <ul>
                     <li>Somos Proveedor de Servicios Electronicos - PSE</li>
                     <li>Contamos con Operador de Servicios Eletronicos - OSE</li>
-                  </ul>
-                  <div>
-                      <img src="./images/sunat.png" alt="">
-                      <span>Resolución Nº 244-005-0000177/SUNAT</span>
-                  </div>
-                </div>
-                <div class="content_image">
-                  <img src="./images/image 37.png" alt="">
+                </ul>
+                <div>
+                    <img src="./images/sunat.png" alt="">
+                    <span>Resolución Nº 244-005-0000177/SUNAT</span>
                 </div>
             </div>
-        </div>
-
-        <!-- Home -->
-        <div class="services" id="divTarifas">
-            <h2>Productos Digitales y Equipos</h2>
-            <div class="h_slider_container services_slider_container">
-                <div id="owl-demo" class="owl-carousel owl-theme">
-                    <div class="item"><img src="images/PuntoCompleto.png" alt="GTA V"></div>
-                    <div class="item"><img src="images/Sistema2.png" alt="The Last of us"></div>
-                </div>
+            <div class="billing_content_image">
+                <img src="./images/sunat-total.png" alt="">
             </div>
         </div>
-
-        <!-- Potencia tu punto de ventas--->
-        <div class="point_of_sales">
-            <div class="content_info">
-                <div class="content_info_text">
-                    <h2>Potencia tu punto de Ventas con estos <span>Equipos</span></h2>
-                    <p>Adquiere nuestros equipos para mejorar la gestion de los puntos de venta</p>
-                </div>
-                <div class="content_info_img">
-                  <img src="./images/woman.png" alt="">
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Icon Boxes -->
-        <div class="icon_boxes">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="icon_box_title">
-                            <h1 style="color:#181F27">Genera tus facturas electrónicas en segundos</h1>
-                        </div>
-                        <div class="button icon_box_button trans_200">
-                            <a href="registrarse.html" class="trans_200">REGÍSTRATE AQUÍ</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 icon_box_col">
-                        <!-- Icon Box Item -->
-                        <div class="icon_box_item">
-                            <h2>Rapidez</h2>
-                            <p>Registra tus boletas y facturas en 3 simples pasos. Ingresa el DNI o RUC, agrega los productos, verifica el total y ¡Listo! Imprime tu comprobante electrónico.</p>
-                        </div>
-                        <!-- Icon Box Item -->
-                        <div class="icon_box_item">
-                            <h2>Versatilidad</h2>
-                            <p>Registra tus boletas y facturas desde tu PC, laptop, tablet o celular, y automáticamente tu cliente recibirá un correo electrónico con una copia del comprobante emitido.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 icon_box_col">
-                        <!-- Icon Box Item -->
-                        <div class="icon_box_item">
-                            <h2>Integridad</h2>
-                            <p>Consulta el número de RUC en SUNAT, así como el número de DNI en RENIEC, en cuestion de segundos y sin salir de nuestra plataforma.</p>
-                        </div>
-                        <!-- Icon Box Item -->
-                        <div class="icon_box_item">
-                            <h2>Económico</h2>
-                            <p>Tenemos una tarifa diseñada especialmente para ti, ponte en contacto con nosotros y te ofreceremos el plan que más te convenga. Tenemos planes mensuales y anuales desde 30 NUEVOS SOLES.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Vertical Slider Section -->
-        <div class="v_slider_section">
-            <div class="container fill_height">
-                <div class="row fill_height">
-                    <div class="col-lg-6 v_slider_section_image">
-                        <div class="v_slider_image">
-                            <img class="v_slider_section_img" src="images/v_slider_section.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 v_slider_content d-flex flex-column justify-content-center">
-                        <div class="v_slider_container">
-                            <!-- Vertical Slider -->
-                            <div class="v_slider">
-                                <!-- Vertical Slider Item -->
-                                <div class="v_slider_item">
-                                    <h1>Sistema Punto</h1>
-                                    <h1>de Venta </h1>
-                                    <h1>para todo </h1>
-                                    <h1>tipo de negocio</h1>
-                                    <p><b>SISTEMA DE VENTAS</b> con funcionalidades como: Ventas, Compras, Kardex, Caja, Lineas de producto, Administracion de clientes, Proformas,<b> Emision de facturas y boletas electronicas validas para SUNAT</b>, impresion Ticket, A4, A5 y adaptable a monitores tactiles para giro cualquier tipo de negocio como<b> BODEGAS, BAZARES, BOTICAS, FARMACIAS, FERRERIAS, TIENDAS DE SERVICIOS Y REPUESTOS</b></p>
-                                </div>
-                                <!-- Vertical Slider Item -->
-                                <div class="v_slider_item">
-                                    <h1>Analiza en</h1>
-                                    <h1>tiempo real tus</h1>
-                                    <h1>ingresos</h1>
-                                    <h1>mensuales</h1>
-                                    <p>Supervisa si tus ingresos o ventas se han incrementado o han disminuido mediante ratios y gráficos interactivos, que te permiten comparar tus ingresos a través del tiempo.</p>
-                                </div>
-                                <!-- Vertical Slider Item -->
-                                <div class="v_slider_item">
-                                    <h1>Registra y</h1>
-                                    <h1>administra</h1>
-                                    <h1>tus clientes</h1>
-                                    <h1>más frecuentes</h1>
-                                    <p>Construye tu propia cartera de clientes en base a sus datos más relevantes, y así poder agilizar la emision de tus comprobantes electrónicos.</p>
-                                </div>
-                                <!-- Vertical Slider Item -->
-                                <div class="v_slider_item">
-                                    <h1>Contruye</h1>
-                                    <h1>tu propio</h1>
-                                    <h1>catálogo</h1>
-                                    <h1>de productos</h1>
-                                    <p>Registra cada uno de tus productos o servicios y mantén tu catálogo actualizado en base a sus respectivos precios unitarios</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services -->
-        <div class="services" id="divTarifas" >
-            <img src="images/Seccion1.png" alt="GTA V">
-        </div>
-        <!-- Features -->
-        <!-- Newsletter -->
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-              <div class="row">
-                
-                <div class="col-lg-4">
-      
-                  <!-- Footer Intro -->
-                  <div class="footer_intro">
-      
-                    <!-- Logo -->
-                  
-                    
-                    <div class="logo footer_logo">
-                      <a href="#"><i class="fas fa fa-bolt fa-flip-horizontal"></i> SuperFACT</a>
-                    </div>
-                    
-                    <p>Software especializado para la emision y declaracion de comprobantes electrónicos en SUNAT.</p>
-                    
-                    <!-- Social -->
-                    <div class="footer_social">
-                      <ul>
-                        <li><a href="http://facebook.com/fasteinvoice" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="http://instagram.com/fasteinvoice" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://wa.me/51923556614?text=Solicito%20mas%20informacion%20sobre%20las%20tarifas%20del%20servicio%20de%20Facturacion%20electronica" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                        <li><a href="mailto:administrador@fasteinvoice.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-                      </ul>
-                    </div>
-                    
-                    <!-- Copyright -->
-                    <div class="footer_cr">Copyright &copy; SuperFact 2021</div>
-      
-                  </div>
-      
-                </div>
-                
-                <!-- Footer Services -->
-                <div class="col-lg-4">
-      
-                  <div class="footer_col">
-                    <div class="footer_col_title">Comprobantes electrónicos</div>
-                    <ul>
-                      <li><a href="#!">Boletas de venta</a></li>
-                      <li><a href="#!">Facturas</a></li>
-                      <li><a href="#!">Notas de Crédito</a></li>
-                      <li><a href="#!">Notas de Débito</a></li>
-                    </ul>
-                  </div>
-                  
-                  <div class="footer_col">
-                    <div class="footer_col_title">Administración</div>
-                    <ul>
-                      <li><a href="#!">Clientes</a></li>
-                      <li><a href="#!">Productos</a></li>
-                      <li><a href="#!">Unidades de medida</a></li>
-                      <li><a href="#!">Series y correlativos</a></li>
-                    </ul>
-                  </div>
-      
-                </div>
-      
-                <!-- Footer About -->
-                <div class="col-lg-4">
-      
-                  <div class="footer_col">
-                    <div class="footer_col_title">Adicionales</div>
-                    <ul>
-                      <li><a href="#!">Graficos y ratios aplicados a las ventas</a></li>
-                      <li><a href="#!">Adicion de multiples usuarios</a></li>
-                      <li><a href="#!">Comprobantes INAFECTOS Y EXONERADOS</a></li>
-                      <li><a href="#!">Comprobantes con DESCUENTOS</a></li>
-                      <li><a href="#!">Correos electrónicos automatizados</a></li>
-                    </ul>
-                  </div>
-      
-                  <div class="footer_col">
-                    <div class="footer_col_title">Contáctanos</div>
-                    <ul>
-                      <li><a href="#!">Correo: administrador@fasteinvoice.com</a></li>
-                      <li><a href="#!">Teléfono: 923 556 614</a></li>
-                    </ul>
-                  </div>
-      
-                </div>
-      
-              </div>
-      
-              <div class="row">
-                <div class="col">
-                  <!-- Copyright -->
-                  <div class="footer_cr_2">2021 All rights reserved</div>
-                </div>
-              </div>
-            </div>
-          </footer>
     </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="styles/bootstrap4/popper.js"></script>
-    <script src="styles/bootstrap4/bootstrap.min.js"></script>
-    <script src="plugins/greensock/TweenMax.min.js"></script>
-    <script src="plugins/greensock/TimelineMax.min.js"></script>
-    <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="plugins/greensock/animation.gsap.min.js"></script>
-    <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-    <script src="plugins/slick-1.8.0/slick.js"></script>
-    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-    <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
-    <script src="plugins/easing/easing.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/bootstrap-notify.js"></script>
-    <script src="js/jquery.serializeToJSON.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-</body>
-<!-- Mirrored from fasteinvoice.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jun 2019 03:46:18 GMT -->
 
+    <!-- Digital products-->
+    <div class="digitalProducts">
+        <h2>Productos Digitales Y Equipos</h2>
+        <div class="digitalProducts_carousel">
+            <div class="digitalProducts_carousel_items">
+                <div class="items">
+                    <img src="./images/producto1.png" alt="">
+                    <img src="./images/producto2.png" alt="">
+                </div>
+            </div>
+            <button>Solicitar</button>
+        </div>
+    </div>
+
+    <!-- Point of sales -->
+    <div class="pointOfSales">
+        <div class="pointOfSales_content">
+            <div class="pointOfSales_content_info">
+                <h2>Potencia tu punto de Ventas con estos <span>Equipos</span></h2>
+                <p>Adquiere nuestros equipos para mejorar la gestion de los puntos de venta</p>
+            </div>
+            <div class="pointOfSales_content_img">
+                <img src="./images/woman.png" alt="">
+            </div>
+        </div>
+
+        <!-- Point of sales carousel -->
+        <div class="pointOfSalesCarousel">
+            <div class="pointOfSalesCarousel_content">
+                <div class="pointOfSalesCarousel_content_items">
+                    <div class="items">
+                        <img src="./images/Ticketeras.png" alt="">
+                        <p>Ticketeras</p>
+                    </div>
+                    <div class="items">
+                        <img src="./images/Gavetas de dinero.png" alt="">
+                        <p>Gavetas de dinero</p>
+                    </div>
+                    <div class="items">
+                        <img src="./images/Lectores de barra.png" alt="">
+                        <p>Lectores de Barra</p>
+                    </div>
+                </div>
+                <button>Solicitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer_content">
+            <div class="footer_content1">
+                <div class="footer_content1_logo">
+                    <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+                </div>
+                <p>Software especializado para la emsión y declaración de comprobantes electrónicos en SUNAT</p>
+                <div class="footer_content1_social">
+                    <ul>
+                        <li><a href="#!"><img src="./images/svg/logo-de-facebook.svg" alt="" id="#icon"></a></li>
+                        <li><a href="#!"><img src="./images/svg/instagram.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="./images/svg/whatsapp.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="./images/svg/correo-electronico-vacio.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer_content_copyright">Copyright &copy; SuperFact 2021</div>
+            </div>
+            <div class="footer_content2">
+                <!-- content 1-->
+                <div>
+                    <div class="footer_content2_title">Comprobantes electrónicos</div>
+                    <ul>
+                        <li><a href="#!">Boletas de venta</a></li>
+                        <li><a href="#!">Facturas</a></li>
+                        <li><a href="#!">Notas de Crédito</a></li>
+                        <li><a href="#!">Notas de Débito</a></li>
+                    </ul>
+                </div>
+                <!-- content 2-->
+                <div>
+                    <div class="footer_content2_title">Adicionales</div>
+                    <ul>
+                        <li><a href="#!">Graficos y ratios aplicados a las ventas</a></li>
+                        <li><a href="#!">Adicion de multiples usuarios</a></li>
+                        <li><a href="#!">Comprobantes INAFECTOS Y EXONERADOS</a></li>
+                        <li><a href="#!">Comprobantes con DESCUENTOS</a></li>
+                        <li><a href="#!">Correos electrónicos automatizados</a></li>
+                      </ul>
+                </div>
+                <!-- content 3-->
+                <div>
+                    <div class="footer_content2_title">Administración</div>
+                    <ul>
+                        <li><a href="#!">Clientes</a></li>
+                        <li><a href="#!">Productos</a></li>
+                        <li><a href="#!">Unidades de medida</a></li>
+                        <li><a href="#!">Series y correlativos</a></li>
+                    </ul>
+                </div>
+                <!-- content 4-->
+                <div>
+                    <div class="footer_content2_title">Contáctanos</div>
+                    <ul>
+                        <li><a href="#!">Correo: administrador@fasteinvoice.com</a></li>
+                        <li><a href="#!">Teléfono: 923 556 614</a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>

@@ -1,657 +1,415 @@
-:root
-{
-    --textcolor: #202647;
-    --whitecolor: #fff;
-    --darkredcolor: #F10A50;
-    --parrafo: #354455;
+/* CSS DOCUMENT*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,400,500,700,900');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: #F10A50;
 }
 
-h1, h2, h3, h4, h5, h6{
-    color: var(--textcolor);
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	line-height: 1;
+	font-weight: 400;
+    width: 100%;
 }
-p{
-    color: var(--parrafo);
+button{
+    text-align: center;
+    border: none;
+    border-radius: 40px;
+    font: inherit;
+    cursor: pointer;
 }
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+}
+/*HEADER*/
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #F10A50;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    padding-inline-start: 275px;
+    padding-inline-end: 230px;
+    padding-block-start: 19px;
+    padding-block-end: 19px;
+    z-index: 10;
+}
+.header_logo img{
+    width: 130px;
+}
+.header_navigation{
+    margin: auto 0;
+}
+.header_navigation ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
 
-/*********************************
- Main Navigation
-*********************************/
-
-.main_nav ul li a
-{
-    color: var(--whitecolor);
 }
-.main_nav ul li a:hover
-{
+.header_navigation ul li{
+    list-style: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.header_navigation li:hover{
     color: #DFE351;
 }
 
-/*********************************
- Header
-*********************************/
+/*COVER PAGE*/
 
-.header
-{
-    background-color: var(--darkredcolor);
-    opacity: 0.94;
-}
-.header.scrolled
-{
-    background-color: var(--darkredcolor);
-}
-
-/*********************************
- Hero
-*********************************/
-
-.hero_slider_nav div i
-{
-    color: var(--darkredcolor);
-}
-
-/*cambia el color de la flecha derecha e izquierda del inicio*/
-.hero_slider_nav div::before
-{
-    background: red;
-}
-
-/*********************************
- Services Slider
-*********************************/
-
-/*borde*/
-.services_slider .owl-item.center .services_item_inner
-{
-    border: 5px solid #D51528;
-}
-/** emogi active color*/
-.services_slider .owl-item.center .services_item_inner i
-{
-    color: #D51528;
-}
-/*button active*/
-.services_item_inner .service_item_button
-{
-    background: transparent;
-    border: solid 2px var(--darkredcolor);
-}
-.services_item_inner .service_item_button a
-{
-    color: red;
-}
-.services_item_inner .service_item_button a:hover
-{
-    color: white;
-}
-/*button active hover*/
-.services_item_inner .service_item_button:hover
-{
-    background: var(--darkredcolor);
-}
-/*emogi*/
-.service_item_icon .icon
-{
-    color: #D51528;
-}
-/* arrows direction color*/
-.services_slider_nav:hover i
-{
-	color: #D51528;
-}
-.services_slider .owl-item.center .services_item .services_item_inner h2, .services_slider .owl-item.center .services_item .services_item_inner h1 
-{
-    color: black; 
-}
-.services_slider .owl-item.center .services_item .services_item_inner p
-{
-    color: #181F27;
-}
-
-/*background*/
-.services_slider .owl-item.center .services_item_inner 
-{
-    background: #fff;
-}
-
-/*********************************
- owl carouel 
-*********************************/
-
-/*** modificar los colores del html ----- inicio de la imagennn y facturacipon electronica*/
-.owl-carousel .owl-item span
-{
-    color: white;
-}
-
-/*********************************
- Buttons
-*********************************/
-.button{
-    border: solid 3px #B31A25;
-    color: #B31A25;
-}
-.button:hover{
-    background: #B31A25;
-    color: white;
-}
-.button a{
-    color: #B31A25;
-}
-#divEnviarInfo .button{
-    background: #B31A25;
-    color: white;
-}
-#divEnviarInfo .button:hover{
-    background: red;
-    border: red;
-}
-/*********************************
- Footer
-*********************************/
-.footer_logo a
-{
-    color: white;
-}
-.footer_logo a:hover{
-    color: #F10A50;
-}
-.footer_social ul li a i
-{
-    color: #c4c4c4;
-}
-
-.footer_social ul li a:hover i
-{
-    color: #F10A50;
-}
-body > div > footer {
-    background: #181F27;
-}
-body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
-{
-    color: white
-}
-.footer_col_title
-{
-    color: white
-}
-.footer_col ul li a:hover
-{
-    color: white;
-}
-
-/*********************************
- owl carouel 
-*********************************/
-
-/*------contactanos -----------*/
-#divContactanos
-{
-    background-color: #273240;
-}
-.newsletter_title h1
-{
-    color: white;
-}
-.newsletter_title span
-{
-    color: #909090;
-}
-#correoSolicitud
-{
-    background-color: white;
-}
-.newsletter_email
-{
-    color: black;
-}
-
-/*********************************
- Background Registrate/Consultar/Inisiar sesión
-*********************************/
-
-.bg-gradient-primary
-{
-    background: #D51528
-}
-
-/*********************************
- Menú
-*********************************/
-
-.menu_container
-{
-    width: 250px;
-    background: #181F27;
-}
-.menu_close:hover i
-{
-    color: #F10A50;
-}
-.menu ul
-{
-    padding-right: 0px;
-    list-style-type: none;
-}
-.menu ul li
-{
-    position: relative;
-    display: block;
-    text-align: right;
-    animation: all 10s;
-}
-.menu ul li a
-{
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 15px 20px;
-    color: var(--whitecolor);
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.menu ul li a::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    transition: width 250ms ease;
-    z-index: -1;
-}
-.menu ul li a:hover
-{
-    color: var(--darkredcolor);
-    transition: .8s;
-}
-.menu ul li a:hover::before
-{
-    width: 100%;
-    height: 100%;
-    background-color: var(--whitecolor);
-    transition: width 250ms ease;
-}
-.hamburger_container i:hover
-{
-    color: #181F27;
-}
-
-/*********************************
- Button Registrate/Consultar/Inisiar sesión
-*********************************/
-
-.btn-primary   
-{
-    color: white;
-    background-color: #B31A25;
-    border: none;
-}
-.btn-primary:hover
-{
-    background-color: red;
-}
-.next_section_scroll:hover i
-{
-	color:  red;
-}
-
-/*cheked*/
-.custom-control-input:checked~.custom-control-label::before 
-{
-    border: none;
-    background-color: #f31b07d4;
-}
-.v_slider .slick-dots li.slick-active button{
-    background: red;
-}
-/* responsive menu*/
-@media only screen and (max-width: 400px)
-{
-    .menu_container{
-        width:100%
-    }
-}
-
-/* links red color*/
-a{
-    color: #f31b07d4;
-}
-a:hover{
-    color: red;
-}
-@media only screen and (max-width: 450px){
-    .item_1 span:nth-child(3) {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 360px){
-    .item_1 span:nth-child(3) {
-        font-size: 28px;
-    }
-    .input-group{
-        display: block;
-    }
-    .input-group input, button{
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-/*Modificaciones*/
-
-body > div > footer 
-{
-    background: #181F27
-}
-
-body > div > footer > div > div:nth-child(1) > div:nth-child(1) > div > p
-{
-    color: white
-}
-.footer_col_title
-{
-    color: white
-}
-
-#owl-demo .item img
-{
-    display: block;
-    width: 899px;
-    height: auto;
-    text-align: center;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.owl-theme .owl-nav 
-{
-    margin-top: 10px;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
-    z-index: 10000;
-    background: transparent;
-}
-
-.owl-theme .owl-nav [class*='owl-'] 
-{
-    color: #FFF;
-    font-size: 20px;
-    margin: 5px;
-    padding: 4px 7px;
-    background: #E0212F;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.services 
-{
-    color: #000;
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-/*portada*/
-.portada
-{
-    background: #faebeb;
+.coverPage{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 40px 30px 30px 30px;
-    text-align: center;
-    gap: 15px;
-    margin-top: 120px;
+    padding-inline-start: 300px;
+    padding-inline-end: 300px;
+    padding-block-start: 28px;
+    padding-block-end: 15px;
+    background-color: #faebeb;
+    gap: 45px;
 }
-.portada .info .image
-{
-    width: 100%
+.coverPage img{
+    width: 90%;
 }
-.portada .info .image img
-{
-    width: 400px;
+.coverPage_info h2{
+    padding-bottom: 5px;
 }
-.form
-{
-    position: relative; 
-    width: auto;
-    margin: auto;   
+.coverPage_info p{
+    font-size: 12px;
+    padding-left: 5px;
 }
-.form .container
-{
-    padding: 0;
-    padding: 15px 50px;
-    width: 100%;
-    background: #191717;
-    border-radius: 0 0 40px 40px;
-}
-.form .container input
-{
-    width: 100%;
-    display: block;
-    margin: 15px 0;
-    padding: 0 15px;
-}
-.form  h2
-{
+.coverPage_form{
     position: relative;
-    background: #F10A50;
-    color: white;
-    padding: 15px;
-    margin: 0;
-    border-radius: 40px 40px 0 0;
+    margin: 0 auto;
 }
-.form::before   
-{
+.coverPage_form h2{
+    position: relative;
+    color: white;
+    background-color: #F10A50;
+    padding: 12px 0;
+    border-radius: 40px 40px 0 0;
+    text-align: center;
+}
+.coverPage_form form{
+    position: relative;
+    background-color: #131313;
+    border-radius: 0 0 40px 40px;
+    padding: 20px 45px;
+}
+.coverPage_form form input{
+    width: auto;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+.coverPage_form button{
+    background-color: #32A193;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.coverPage_form::before{
     content: '';  
     position: absolute;
     background-image: url(../images/fond-form.png);
-    left: 20px;
-    top: -20px;
+    left: 15px;
+    top: -10px;
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.portada .info .logo
-{
-    padding: 0;
-}
-.portada #divEnviarInfo
-{
-    padding-bottom: 14px;
-}
 
-#divTarifas > div{
-    margin-top: 0px;
-}
-.form #divEnviarInfo .button{
-    background: #32A193;
-    border: none;
-    border-radius: 30px;
-    width: 100%;
-    height: 40px;
-}
-/*beneficios*/
+/*BENEFITS*/
 .benefits{
+    position: relative;
     width: 100%;
     background: #131313;
+}
+.benefits::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/benefits\ image.png);
+    background-repeat: no-repeat;
+    background-size: 103%;
+    opacity: .2;
 }
 .benefits h2{
     color: #F10A50;
     padding-bottom: 35px;
+    font-weight: 600;
+    font-size: 30px;
 }
-.benefits .content{
-   padding: 20px 45px;
+.benefits_content{
+    position: relative;
+    padding-inline-start: 300px;
+    padding-inline-end: 300px;
+    padding-block-start: 28px;
+    padding-block-end: 28px;
 }
-.benefits .content .list{
+.benefits_content_list{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     width: 100%;
-    gap: 20px;
+    gap: 25px;
 }
-.benefits .content .icon{
+.benefits_content .icon{
     text-align: center;
     width: 100%;
 }
 .benefits p{
     color: white;
     margin-top: 16px;
+    font-size: 12px;
 }
 .benefits .icon img{
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
 }
 
-.electronic_billing{
-    padding: 20px 45px;
+/*BILLING*/
+
+.billing{
+    padding-inline-start: 300px;
+    padding-inline-end: 300px;
+    padding-block-start: 28px;
+    padding-block-end: 28px;
 }
-.electronic_billing .content{
+.billing_content{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     gap: 30px;
     margin: auto;
+    font-size: 14px;
 }
-.electronic_billing .content_info{
+.billing_content_info{
     margin: auto;
 }
-.electronic_billing li{
-    list-style-type: disc;
-    margin-left: 30px;
+.billing h2{
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
 }
-.electronic_billing .content_info div{
+.billing_content ul{
+    padding: 5px 0;
+}
+.billing_content li{
+    list-style: disc;
+    margin-left: 40px;
+    font-size: 12px;
+    padding: 3px 0;
+}
+.billing_content_info div{
     text-align: center;
 }
-.electronic_billing span{
+.billing_content span{
     display: block; 
     text-align: center;
+    font-size: 8px;
 }
-.electronic_billing .content_image{
+.billing_content_image{
     margin: auto;
 }
-.electronic_billing .content_image img{
+.billing_content_image img{
     width: 100%;
 }
-/*Productos Digitales y Equipos*/
-#divTarifas{
+
+/*DIGITAL PRODUCTS*/
+.digitalProducts{
+    padding-inline-start: 300px;
+    padding-inline-end: 300px;
+    padding-block-start: 15px;
+    padding-block-end: 15px;
     background-color: #FBE9E9;
-    padding: 20px 40px;
     background-image: url(../images/svg/productos-vector.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
-
-/*Punto de ventas*/
-
-.point_of_sales h2{
-    color: #E90A4D;
+.digitalProducts h2{
+    color: black;
 }
-.point_of_sales span{
-    color: #BCE90A;
+.digitalProducts_carousel{
+    margin: 20px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
-.point_of_sales p{
+.digitalProducts_carousel button{
+    background-color: black;
     color: white;
+    width: 150px;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 700;
 }
-.point_of_sales .content_info{
-    display: grid;
-    padding: 20px 40px 0px 40px;
-    background: #131313;
-    height: 230px;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-}
-.point_of_sales .content_info img{
-    position: relative;
-    width: 380px;
-    height: 400px;
-    top: -185px;
-}
-.point_of_sales .owl-theme .owl-nav 
-{
-    margin-top: 10px;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
-    z-index: 10000;
-    background: transparent;
-}
-
-.point_of_sales .owl-theme .owl-nav [class*='owl-'] 
-{
-    color: #FFF;
-    font-size: 20px;
-    margin: 5px;
-    padding: 4px 7px;
-    background: #E0212F;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 3px;
-}
-.point_of_sales .content_info_img{
+.digitalProducts_carousel_items{
     margin: auto;
 }
+.digitalProducts_carousel_items img{
+    display: block;
+    width: 300px;
+    height: 200px;
+}
 
+/*POINT OF SALES CONTENT*/
+
+.pointOfSales_content{
+    padding-inline-start: 300px;
+    padding-inline-end: 300px;
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+    background: #131313;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 150px;
+}
+.pointOfSales span{
+    color: #BCE90A;
+}
+.pointOfSales h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.pointOfSales p{
+    color: white;
+    font-size: 21px;
+}
+.pointOfSales_content_img img{
+    position: relative;
+    width: 330px;
+    height: 350px;
+    top: -200px;
+}
+
+/*POINT OF SALES CAROUSEL*/
+
+.pointOfSalesCarousel{
+    position: relative;
+    background-color: #D21523;
+    height: 270px;
+}
+.pointOfSalesCarousel_content{
+    position: relative;
+    height: 100%;
+    background-image: url(../images/svg/Potencia-punto-ventas-vector.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -50px;
+    padding-block-start: 75px;
+    padding-inline-start: 300px;
+    padding-inline-end: 300px;
+    text-align: center;
+}
+
+.pointOfSalesCarousel_content button{
+    background-color: #32A193;
+    color: white;
+    width: 35%;
+    padding: 8px;
+    margin: 10px 0;
+}
+.pointOfSalesCarousel_content_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pointOfSalesCarousel_content_items p{
+    font-size: 12px;
+}
+.pointOfSalesCarousel_content_items img{
+    width: 150px;
+    height: 130px;
+}
+/*FOOTER+*/
+
+.footer{
+    padding-inline-start: 300px;
+    padding-inline-end: 300px;
+    padding-block-end: 0px;
+    background-color: #131313;
+}
+.footer_content{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 30px;
+    background-color: #181F27;
+    border-radius: 28px;
+    padding: 10px 25px;
+    color: white;
+    top: -25px;
+}
+.footer_content1 p{
+    font-size: 10px;
+    line-height: 2;
+}
+.footer_content1_logo{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.footer_content1_logo img{
+    width: 70px;
+}
+.footer_content1_social ul{
+    padding: 20px 0;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer_content1_social ul li{
+    width: 30px;
+}
+.footer_content_copyright{
+    font-size: 10px;
+}
+.footer_content1_social img{
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+.footer_content2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2.5;
+}
+.footer_content2_title{
+    font-size: 12px;
+}
+.footer_content2 ul li{
+    font-size: 11px;
+}
+.footer_content2 ul li a{
+    color: #909090;
+}
+.footer_content2 ul li a:hover{
+    color: white;
+}
 /*responsive*/
 @media only screen and (max-width: 789px){
     .portada{
         grid-template-columns: 1fr;
     }
     .benefits .content .list{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .electronic_billing .content{
         grid-template-columns: 1fr;
     }
-}
-@media only screen and (max-width: 710px){
-    .point_of_sales .content_info{
-        grid-template-columns: 1fr;
-    }
-    /*
-    .point_of_sales .content_info img{
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .point_of_sales .content_info{
-        height: auto;
-    }*/
-    .point_of_sales .content_info_img{
-        display: none;
-    }
-    .point_of_sales .content_info{
-        height: auto;
-    }
-}
-@media only screen and (max-width: 500px){
-    .benefits .content .list{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (max-width: 481px){
-    .portada{
-        margin-top: 40px;
-    }
-}
-@media only screen and (max-width: 425px){
-    .portada .info .image img {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px)
-{
-	.benefits .content .list{
-        grid-template-columns: 1fr;
-    }
-    /*
-    .point_of_sales .content_info img{
-        display: none;
-    }*/
 }
