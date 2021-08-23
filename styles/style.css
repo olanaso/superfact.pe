@@ -1,27 +1,32 @@
 /* CSS DOCUMENT*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,400,500,700,900');
+@font-face {
+    font-family: "Open Sans Hebrew";
+    src: url("fonts/opensanshebrew-regular.ttf");
+}
+@font-face {
+    font-family: "Baloo";
+    src: url("fonts/Baloo-Regular.ttf");
+}
 
 *{
     margin: 0;
     padding: 0;
 }
-h2{
-    color: #F10A50;
-}
 
 body{
+    /*
 	font-family: 'Poppins', sans-serif;
+    */
+    font-family: "Open Sans Hebrew";
 	font-size: 15px;
 	line-height: 1;
 	font-weight: 400;
     width: 100%;
 }
-button{
-    text-align: center;
-    border: none;
-    border-radius: 40px;
-    font: inherit;
-    cursor: pointer;
+
+h1{
+    color: #F10A50;
 }
 ul li{
     list-style: none;
@@ -30,7 +35,15 @@ ul li{
 ul li a{
     text-decoration: none;
 }
+button{
+    text-align: center;
+    border: none;
+    border-radius: 40px;
+    font: inherit;
+    cursor: pointer;
+}
 /*HEADER*/
+
 .header{
     position: sticky;
     top: 0;
@@ -77,10 +90,13 @@ ul li a{
     background-color: #faebeb;
     gap: 45px;
 }
+.coverPage_img{
+    margin-top: 15px;
+}
 .coverPage img{
     width: 90%;
 }
-.coverPage_info h2{
+.coverPage_info h1{
     padding-bottom: 5px;
 }
 .coverPage_info p{
@@ -132,6 +148,7 @@ ul li a{
 }
 
 /*BENEFITS*/
+
 .benefits{
     position: relative;
     width: 100%;
@@ -144,11 +161,11 @@ ul li a{
     height: 100%;
     background-image: url(../images/benefits\ image.png);
     background-repeat: no-repeat;
-    background-size: 103%;
+   background-size: cover;
+    background-position: center;
     opacity: .2;
 }
-.benefits h2{
-    color: #F10A50;
+.benefits h1{
     padding-bottom: 35px;
     font-weight: 600;
     font-size: 30px;
@@ -193,12 +210,12 @@ ul li a{
     grid-template-columns: 60% 40%;
     gap: 30px;
     margin: auto;
-    font-size: 14px;
+
 }
 .billing_content_info{
     margin: auto;
 }
-.billing h2{
+.billing h1{
     color: black;
     font-weight: 700;
     font-size: 30px;
@@ -209,7 +226,6 @@ ul li a{
 .billing_content li{
     list-style: disc;
     margin-left: 40px;
-    font-size: 12px;
     padding: 3px 0;
 }
 .billing_content_info div{
@@ -218,7 +234,7 @@ ul li a{
 .billing_content span{
     display: block; 
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
 }
 .billing_content_image{
     margin: auto;
@@ -228,6 +244,7 @@ ul li a{
 }
 
 /*DIGITAL PRODUCTS*/
+
 .digitalProducts{
     padding-inline-start: 300px;
     padding-inline-end: 300px;
@@ -238,7 +255,7 @@ ul li a{
     background-repeat: no-repeat;
     background-position: bottom;
 }
-.digitalProducts h2{
+.digitalProducts h1{
     color: black;
 }
 .digitalProducts_carousel{
@@ -280,7 +297,7 @@ ul li a{
 .pointOfSales span{
     color: #BCE90A;
 }
-.pointOfSales h2{
+.pointOfSales h1{
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 15px;
@@ -308,8 +325,8 @@ ul li a{
     height: 100%;
     background-image: url(../images/svg/Potencia-punto-ventas-vector.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    top: -50px;
+    background-size: cover;
+    top: -60px;
     padding-block-start: 75px;
     padding-inline-start: 300px;
     padding-inline-end: 300px;
@@ -319,9 +336,10 @@ ul li a{
 .pointOfSalesCarousel_content button{
     background-color: #32A193;
     color: white;
-    width: 35%;
+    width: 200px;
     padding: 8px;
     margin: 10px 0;
+    font-size: 18px;
 }
 .pointOfSalesCarousel_content_items{
     display: flex;
@@ -335,6 +353,7 @@ ul li a{
     width: 150px;
     height: 130px;
 }
+
 /*FOOTER+*/
 
 .footer{
@@ -352,10 +371,10 @@ ul li a{
     border-radius: 28px;
     padding: 10px 25px;
     color: white;
-    top: -25px;
+    top: -20px;
 }
 .footer_content1 p{
-    font-size: 10px;
+    font-size: 12px;
     line-height: 2;
 }
 .footer_content1_logo{
@@ -375,7 +394,7 @@ ul li a{
     width: 30px;
 }
 .footer_content_copyright{
-    font-size: 10px;
+    font-size: 12px;
 }
 .footer_content1_social img{
     width: 30px;
@@ -388,11 +407,10 @@ ul li a{
     grid-template-columns: 45% 45%;
     line-height: 2.5;
 }
-.footer_content2_title{
-    font-size: 12px;
-}
 .footer_content2 ul li{
-    font-size: 11px;
+    font-size: 13px;
+    margin: 15px 0;
+    line-height: 1.5;
 }
 .footer_content2 ul li a{
     color: #909090;
@@ -400,7 +418,9 @@ ul li a{
 .footer_content2 ul li a:hover{
     color: white;
 }
-/*responsive*/
+
+/***RESPONSIVE***/
+
 @media only screen and (max-width: 1192px){
     .header{
         padding-inline-start: 150px;
@@ -413,7 +433,7 @@ ul li a{
     .benefits_content{
         padding-inline-start: 180px;
         padding-inline-end: 180px;
-    }
+    }    
     .billing{
         padding-inline-start: 180px;
         padding-inline-end: 180px;
@@ -463,6 +483,20 @@ ul li a{
         padding-inline-start: 80px;
         padding-inline-end: 80px;
     }
+    .footer_content1 p{
+        font-size: 15px;
+        line-height: 2;
+    }
+    .footer_content1_logo img{
+        width: 100px;
+    }
+    .footer_content_copyright{
+        font-size: 15px;
+    }
+    .footer_content2 ul li{
+        font-size: 15px;
+    }
+
 }
 @media only screen and (max-width: 840px){
     .header_navigation{
@@ -477,7 +511,7 @@ ul li a{
         display: none;
     }
 }
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 768px){
     .coverPage{
         grid-template-columns: 1fr;
     }
@@ -488,21 +522,99 @@ ul li a{
     .benefits_content_list{
         grid-template-columns: repeat(3, 1fr);
     }
+    .billing h1{
+        margin-bottom: 15px;
+    }
     .billing_content{
         grid-template-columns: 1fr;
     }
     .footer_content{
         grid-template-columns: 1fr;
     }
+    .footer_content1_social ul{
+        padding: 20px 0;
+    }
+    .footer_content1_logo{
+        text-align: start;
+        padding-top: 20px;
+    }
     .footer_content2{
         grid-template-columns: 1fr;
     }
 }
-@media only screen and (max-width: 540px){
-    .coverPage .form{
+@media only screen and (max-width: 654px){
+    .coverPage_form{
         padding: 0;
     }
+}
+
+@media only screen and (max-width: 540px){
     .benefits_content_list{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .header{
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+    .coverPage{
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+    .coverPage_form::before{
+        display: none;
+    }
+    .benefits_content{
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }  
+    .billing{
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+    .digitalProducts{
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+    .pointOfSales_content, .pointOfSalesCarousel_content{
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+    .footer{
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+}
+@media only screen and (max-width: 320px){
+
+    .coverPage_form h2{
+        font-size: 15px;
+    }
+    .coverPage_form form{
+        padding: 20px 25px;
+    }
+    .coverPage_form .form input{
+        font-size: 15px;
+    }
+    .benefits_content_list{
+        grid-template-columns: 1fr;
+    }
+    .footer_content1_social ul{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .footer_content{
+        overflow: hidden;
+    }
+    .footer_content1_social ul li{
+        margin: 10px;
+    }
+    .digitalProducts_carousel button{
+        width: 100%;
+    }
+    .pointOfSalesCarousel_content button{
+        width: 100%;
     }
 }
