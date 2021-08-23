@@ -106,10 +106,10 @@ ul li a{
     padding: 20px 45px;
 }
 .coverPage_form form input{
-    width: auto;
+    width: 100%;
     display: inline-block;
     margin-bottom: 10px;
-    padding: 5px 15px;
+    padding: 5px 0;
     font-size: 20px;
 }
 .coverPage_form button{
@@ -345,7 +345,6 @@ ul li a{
 }
 .footer_content{
     position: relative;
-    width: 100%;
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 30px;
@@ -386,7 +385,7 @@ ul li a{
 .footer_content2{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 45%;
     line-height: 2.5;
 }
 .footer_content2_title{
@@ -402,14 +401,108 @@ ul li a{
     color: white;
 }
 /*responsive*/
-@media only screen and (max-width: 789px){
-    .portada{
+@media only screen and (max-width: 1192px){
+    .header{
+        padding-inline-start: 150px;
+        padding-inline-end: 150px;
+    }
+    .coverPage{
+        padding-inline-start: 180px;
+        padding-inline-end: 180px;
+    }
+    .benefits_content{
+        padding-inline-start: 180px;
+        padding-inline-end: 180px;
+    }
+    .billing{
+        padding-inline-start: 180px;
+        padding-inline-end: 180px;
+    }
+    .digitalProducts{
+        padding-inline-start: 180px;
+        padding-inline-end: 180px;
+    }
+    .pointOfSales_content, .pointOfSalesCarousel_content{
+        padding-inline-start: 180px;
+        padding-inline-end: 180px;
+    }
+    .footer{
+        padding-inline-start: 180px;
+        padding-inline-end: 180px;
+    }
+}
+@media only screen and (max-width: 970px){
+    .header{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }
+    .coverPage{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }
+    .coverPage_form::before{
+        display: none;
+    }
+    .benefits_content{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }  
+    .billing{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }
+    .digitalProducts{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }
+    .pointOfSales_content, .pointOfSalesCarousel_content{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }
+    .footer{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }
+}
+@media only screen and (max-width: 840px){
+    .header_navigation{
+        display: none;
+    }
+    .pointOfSales_content{
+        grid-template-columns: 1fr;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .pointOfSales_content_img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 770px){
+    .coverPage{
         grid-template-columns: 1fr;
     }
-    .benefits .content .list{
+    .coverPage_form{
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+    }
+    .benefits_content_list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .billing_content{
+        grid-template-columns: 1fr;
+    }
+    .footer_content{
+        grid-template-columns: 1fr;
+    }
+    .footer_content2{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 540px){
+    .coverPage .form{
+        padding: 0;
+    }
+    .benefits_content_list{
         grid-template-columns: repeat(2, 1fr);
-    }
-    .electronic_billing .content{
-        grid-template-columns: 1fr;
     }
 }
