@@ -26,6 +26,9 @@
         padding-inline-start: 180px;
         padding-inline-end: 180px;
     }
+    .pointOfSalesCarousel_content_items img {
+        width: 138px;
+    }
     .footer{
         padding-inline-start: 180px;
         padding-inline-end: 180px;
@@ -59,6 +62,10 @@
         padding-inline-start: 80px;
         padding-inline-end: 80px;
     }
+    .pointOfSalesCarousel_content_items img {
+        width: 90px;
+        height: 90px;
+    }
     .footer{
         padding-inline-start: 80px;
         padding-inline-end: 80px;
@@ -79,22 +86,28 @@
 
 }
 @media only screen and (max-width: 840px){
-    .header_navigation{
+    .header_navigation {
         display: none;
     }
     .hamburger_container {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
-    .pointOfSales_content{
+    .pointOfSales_content {
         grid-template-columns: 1fr;
         height: auto;
         padding-bottom: 50px;
     }
-    .pointOfSales_content_img{
+    .pointOfSales_content_img {
         display: none;
     }
+    .pointOfSalesCarousel_content_items img {
+        width: 90px;
+        height: 90px;
+    }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .coverPage{
         grid-template-columns: 1fr;
     }
@@ -125,9 +138,16 @@
         grid-template-columns: 1fr;
     }
 }
-@media only screen and (max-width: 654px){
+@media only screen and (max-width: 655px){
     .coverPage_form{
         padding: 0;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .pointOfSalesCarousel_content_items img {
+        width: 60px;
+        height: 60px;
     }
 }
 @media only screen and (max-width: 540px){

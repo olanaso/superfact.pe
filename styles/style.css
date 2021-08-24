@@ -15,7 +15,7 @@
 }
 body{
     font-family: "Open Sans Hebrew";
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1;
 	font-weight: 400;
     width: 100%;
@@ -31,6 +31,11 @@ ul li{
 ul li a{
     text-decoration: none;
 }
+
+.fa {
+    color: #24344F !important;
+}
+
 button{
     text-align: center;
     border: none;
@@ -77,6 +82,7 @@ header.sticky .header{
     color: white;
     font-weight: 700;
     cursor: pointer;
+    margin: 0 5px;
 }
 .header_navigation li a:hover{
     color: #DFE351;
@@ -172,6 +178,7 @@ header.sticky .header{
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 0 10px;
 }
 .menu ul li a::before{
     position: absolute;
@@ -243,8 +250,8 @@ header.sticky .header{
     width: 100%;
     display: inline-block;
     margin-bottom: 10px;
-    padding: 5px 0;
-    font-size: 20px;
+    padding: 5px 10px;
+    font-size: 1em;
 }
 .coverPage_form button{
     background-color: #32A193;
@@ -260,9 +267,9 @@ header.sticky .header{
     left: 15px;
     top: -10px;
     width: 100%;
-    height: 100%;
+    height: 60%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 /*BENEFITS*/
@@ -308,7 +315,7 @@ header.sticky .header{
 .benefits p{
     color: white;
     margin-top: 16px;
-    font-size: 12px;
+    font-size: 0.8em;
 }
 .benefits .icon img{
     width: 70px;
@@ -332,6 +339,7 @@ header.sticky .header{
 }
 .billing_content_info{
     margin: auto;
+    font-size: 0.8em;
 }
 .billing h1{
     color: black;
@@ -400,6 +408,14 @@ header.sticky .header{
     height: 200px;
 }
 
+.carousel {
+    width: 500px;
+}
+
+.carousel img {
+    width: 100%;
+}
+
 /*POINT OF SALES CONTENT*/
 
 .pointOfSales_content{
@@ -438,38 +454,45 @@ header.sticky .header{
     background-color: #D21523;
     height: 270px;
 }
-.pointOfSalesCarousel_content{
+.pointOfSalesCarousel_content {
     position: relative;
     height: 100%;
     background-image: url(../images/svg/Potencia-punto-ventas-vector.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    top: -60px;
+    top: -55px;
     padding-block-start: 75px;
     padding-inline-start: 300px;
     padding-inline-end: 300px;
     text-align: center;
 }
 
-.pointOfSalesCarousel_content button{
+.pointOfSalesCarousel_content button {
     background-color: #32A193;
     color: white;
     width: 200px;
     padding: 8px;
     margin: 10px 0;
     font-size: 18px;
+    margin-top: 20px;
 }
-.pointOfSalesCarousel_content_items{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.pointOfSalesCarousel_content_items {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.pointOfSalesCarousel_content_items p{
+.pointOfSalesCarousel_content_items p {
     font-size: 12px;
+    margin-top: 20px;
 }
-.pointOfSalesCarousel_content_items img{
-    width: 150px;
+.pointOfSalesCarousel_content_items img {
+    width: 130px;
     height: 130px;
+}
+
+.slick-next.slick-arrow, .slick-prev.slick-arrow {
+    width: 50px !important;
 }
 
 /*FOOTER+*/
@@ -480,6 +503,7 @@ header.sticky .header{
     padding-block-end: 0px;
     background-color: #131313;
 }
+
 .footer_content{
     position: relative;
     display: grid;
@@ -487,13 +511,13 @@ header.sticky .header{
     gap: 30px;
     background-color: #181F27;
     border-radius: 28px;
-    padding: 10px 25px;
+    padding: 20px 25px;
     color: white;
     top: -20px;
 }
 .footer_content1 p{
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.5;
 }
 .footer_content1_logo{
     text-align: center;
@@ -527,7 +551,7 @@ header.sticky .header{
 }
 .footer_content2 ul li{
     font-size: 13px;
-    margin: 15px 0;
+    margin: 10px 0;
     line-height: 1.5;
 }
 .footer_content2 ul li a{
@@ -550,4 +574,9 @@ header.sticky .header{
 .hamburger_container i:hover
 {
     color: darkred;
+}
+.footer_content2_title {
+    font-size: 15px;
+    line-height: 16px;
+    margin: 10px 0;
 }

@@ -9,6 +9,10 @@
     src: url("../fonts/Baloo-Regular.ttf");
 }
 
+input {
+    padding: 2px 10px;
+}
+
 .contact{
     background-color: #faebeb;
     width: 100%;
@@ -19,7 +23,7 @@
     background-image: url(../images/svg/Vector-blue.svg);
     overflow: hidden;
    /* background-position: -358px -450px;*/
-    background-position: -103% 34%;
+    background-position: -100px 34%;
     background-repeat: no-repeat;
 }
 .centro{
@@ -188,7 +192,7 @@
 .formulario #datos #chekbox{
     display: flex;
     flex-direction: row;
-    margin-top: 7%;
+    margin-top: 20px;
 }
 .formulario #datos input[type="button"]{
     width: 55%;
@@ -202,9 +206,14 @@
     border: none;
     border-radius: 15px;
 }
+
+div.doble div label {
+    line-height: 20px;
+}
+
 @media only screen and (max-width: 978px){
     .fondocirc{
-        background-position: -420px -212px;
+        background-position: -420px -112px;
     }
     .centro{
         grid-template-columns: 1fr;
@@ -241,6 +250,9 @@
 }
 /*responsive*/
 @media only screen and (max-width: 660px){
+    .fondocirc{
+        background-position: -650px -12px;
+    }
     .centro{
         padding-inline-start: 14.4%;
     }
@@ -257,7 +269,8 @@
 }
 @media only screen and (max-width: 600px){
     .centro {
-        padding-inline-start: 10.4%;
+        padding: 5px;
+        margin: 30px 0;
     }
     .texto .imagenpc::before {
         background-position: -70px -44px;
@@ -278,9 +291,6 @@
     }
 }
 @media only screen and (max-width: 545px){
-    .centro {
-        padding-inline-start: 6.4%;
-    }
     .texto .imagenpc::before {
         background-position: -59px -44px;
     }

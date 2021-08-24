@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperFACT - facturación electrónica</title>
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reponsive.css">
-
 </head>
 <body>
 
@@ -21,11 +22,11 @@
             <!--navigation-->
             <nav class="header_navigation">
                 <ul>
-                    <li><a href="#!">Inicio</a></li>
-                    <li><a href="#!">Beneficios</a></li>
-                    <li><a href="#!">Productos</a></li>
-                    <li><a href="#!">Blog</a></li>
-                    <li><a href="#!">Contáctanos</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="/cotizar.html">Contáctanos</a></li>
                 </ul>
             </nav>
             <div class="hamburger_container">
@@ -130,14 +131,14 @@
         <h1>Productos Digitales Y Equipos</h1>
         <div class="digitalProducts_carousel">
 
-            <!--
-            <div class="digitalProducts_carousel_items">
-                <div class="items">
+            <div class="carousel">
+                <div>
                     <img src="./images/producto1.png" alt="">
+                </div>
+                <div>
                     <img src="./images/producto2.png" alt="">
                 </div>
             </div>
-            -->
             
             <button>Solicitar</button>
         </div>
@@ -158,23 +159,32 @@
         <!-- Point of sales carousel -->
         <div class="pointOfSalesCarousel">
             <div class="pointOfSalesCarousel_content">
-
-                <!--
-                <div class="pointOfSalesCarousel_content_items">
-                    <div class="items">
+                <div class="carousel-items">
+                    <div class="pointOfSalesCarousel_content_items">
                         <img src="./images/Ticketeras.png" alt="">
                         <p>Ticketeras</p>
                     </div>
-                    <div class="items">
+                    <div class="pointOfSalesCarousel_content_items">
                         <img src="./images/Gavetas de dinero.png" alt="">
                         <p>Gavetas de dinero</p>
                     </div>
-                    <div class="items">
+                    <div class="pointOfSalesCarousel_content_items">
+                        <img src="./images/Lectores de barra.png" alt="">
+                        <p>Lectores de Barra</p>
+                    </div>
+                    <div class="pointOfSalesCarousel_content_items">
+                        <img src="./images/Ticketeras.png" alt="">
+                        <p>Ticketeras</p>
+                    </div>
+                    <div class="pointOfSalesCarousel_content_items">
+                        <img src="./images/Gavetas de dinero.png" alt="">
+                        <p>Gavetas de dinero</p>
+                    </div>
+                    <div class="pointOfSalesCarousel_content_items">
                         <img src="./images/Lectores de barra.png" alt="">
                         <p>Lectores de Barra</p>
                     </div>
                 </div> 
-                -->
 
                 <button>Solicitar</button>
             </div>
@@ -242,9 +252,12 @@
             </div>
         </div>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/hamburguer.js"></script>
+    <script src="./js/carousel.js"></script>
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
 </body>
 </html>
