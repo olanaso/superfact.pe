@@ -1,0 +1,364 @@
+/*contacto*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,400,500,700,900');
+@font-face {
+    font-family: "Open Sans Hebrew";
+    src: url("../fonts/opensanshebrew-regular.ttf");
+}
+@font-face {
+    font-family: "Baloo";
+    src: url("../fonts/Baloo-Regular.ttf");
+}
+
+.contact{
+    background-color: #faebeb;
+    width: 100%;
+    height: auto;
+}
+.fondocirc{
+
+    background-image: url(../images/svg/Vector-blue.svg);
+    overflow: hidden;
+   /* background-position: -358px -450px;*/
+    background-position: -103% 34%;
+    background-repeat: no-repeat;
+}
+.centro{
+    display: grid;
+    grid-template-columns: 45% 40%;
+    gap: 10px;
+    padding-inline-start: 19.4%;
+    padding-inline-end: 13%;
+    padding-block-start: 2%;
+    padding-block-end: 5%;
+}
+.texto{
+    width: 100%;
+}
+.texto .imagenpc{
+    position: relative;
+    width: 85%;
+    z-index: 5;
+    margin-block-start: 7%;
+}
+.texto .imagenpc::before{
+    content: "";
+    position: absolute;
+    z-index: -5;
+    width: 120%;
+    height: 100%;
+    background-image: url(../images/svg/VectorPC.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -79px -29px;
+}
+.texto img{
+    width: 100%;
+}
+.texto #infa{
+    width: 93%;
+    margin-left: 28px;
+}
+.texto #infa h1{
+    font-size: 24px;
+    font-family: "Open Sans Hebrew";
+    font-weight: bold;
+    line-height: 101.9%;
+    color: white;
+}
+.texto #infa p{
+    font-size: 13px;
+    font-family: "Baloo";
+    line-height: 79.4%;
+    margin-block-start: 2%;
+    color: #FFCBCB;
+}
+
+.suma{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#caja h2{
+    font-size: 15px;
+    color: white;
+}
+
+.suma_c{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+    margin-left: 24%;
+    margin-bottom: 5%;
+    transform: rotate(-2deg);
+}
+
+.suma_c #caja_U h2{
+    font-family: "Baloo";
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 79.4%;
+    
+    color: #FFFCF9;
+}
+.suma_c #caja_U{
+    margin-right: 10px;
+}
+.suma_c #caja_D h2{
+    font-family: "Baloo";
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 79.4%;
+    color: #F10A50;
+}
+.suma_c #caja_T{
+    margin-left: 10px;
+}
+.suma_c #caja_T h2{
+    font-family: "Baloo";
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 79.4%;
+    color: #CCFF00;
+}
+
+.formulario{
+    position: relative;
+    min-width: 480px;
+    padding-top: 20px;
+}
+
+.formulario::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    background-image: url(../images/fond-form.png);
+    width: 105%;
+    height: 90%;
+    background-size: 100%;
+    background-position: -3px 24px;
+    background-repeat: no-repeat;
+}
+.formulario h1{
+    position: relative;
+    font-family: "Open Sans Hebrew";
+    color: white;
+    background-color:#F10A50;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    height: 55px;
+    margin: 0px;
+    padding-top: 15px;
+    border-radius: 40px 40px 0px 0px;
+}
+.formulario #datos{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    padding: 4%;
+    padding-inline-start: 8%;
+    padding-inline-end: 8%;
+    background-color: black;
+    border-radius: 0px 0px 40px 40px;
+}
+.formulario #datos .doble{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.formulario #datos .doble div{
+    width: 47%; 
+}
+.formulario #datos label{
+    font-family: "Open Sans Hebrew";
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+}
+.formulario #datos input[type="text"]{
+    width: 100%;
+    height: 20px;
+}
+.formulario #datos .doble input[type="text"]{
+    width: 100%;
+    height: 20px;
+}
+.formulario #datos #chekbox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+}
+.formulario #datos input[type="button"]{
+    width: 55%;
+    font-family: "Open Sans Hebrew";
+    font-size: 20px;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    color: white;
+    background-color: #F10A50;
+    border: none;
+    border-radius: 15px;
+}
+@media only screen and (max-width: 978px){
+    .fondocirc{
+        background-position: -420px -212px;
+    }
+    .centro{
+        grid-template-columns: 1fr;
+    }
+    .texto h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .texto p{
+        font-size: 25px;
+        text-align: center;
+    }
+    .texto .imagenpc{
+        margin-inline-start: 22%;
+    }
+    .texto img{
+        width: 71%;
+    }
+    .texto .imagenpc::before{
+        width: 87%;
+        background-position: -88px -66px;
+    }
+    .suma_c{
+        margin-left: 38%;
+    }
+}
+@media only screen and (max-width: 722px){
+    .centro{
+        padding-inline-start: 18.4%;
+    }
+    .texto .imagenpc::before {
+        background-position: -67px -43px;
+    }
+}
+/*responsive*/
+@media only screen and (max-width: 660px){
+    .centro{
+        padding-inline-start: 14.4%;
+    }
+    .texto .imagenpc {
+        margin-inline-start: 19%;
+    }
+    
+    .texto .imagenpc::before {
+        background-position: -61px -44px;
+    }
+    .suma_c {
+        margin-left: 27%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .centro {
+        padding-inline-start: 10.4%;
+    }
+    .texto .imagenpc::before {
+        background-position: -70px -44px;
+    }
+    .formulario #datos .doble{
+        flex-direction: column;
+    }
+    .formulario #datos .doble div{
+        width: 100%;
+    }
+
+    .formulario #datos #chekbox {
+        margin-top: 3%;
+    }
+    .formulario #datos input[type="button"]{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
+@media only screen and (max-width: 545px){
+    .centro {
+        padding-inline-start: 6.4%;
+    }
+    .texto .imagenpc::before {
+        background-position: -59px -44px;
+    }
+    .formulario {
+        min-width: 438px;
+        padding-inline-start: 3%;
+    }
+    .formulario::before{
+        left: 16px;
+        width: 102%;
+    }
+}
+@media only screen and (max-width: 512px){
+    .texto .imagenpc::before {
+        background-position: -58px -38px;
+    }
+    .formulario {
+        min-width: 399px;
+        padding-inline-start: 5%;
+    }
+    .formulario::before {
+        left: 22px;
+        width: 100%;
+    }
+    .formulario h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 460px){
+    .texto .imagenpc::before {
+        background-position: -58px -37px;
+    }
+    .formulario {
+        padding-inline-start: 0%;
+    }
+}
+@media only screen and (max-width: 414px){
+    .texto #infa {
+        width: 92%;
+    }
+    .texto .imagenpc {
+        margin-inline-start: 23%;
+    }
+    .texto .imagenpc::before {
+        background-position: -42px -23px;
+    }
+    .suma_c {
+        margin-left: 21%;
+    }
+    .formulario {
+        min-width: 352px;
+    }
+    .formulario::before {
+        left: 19px;
+        top: -16px;
+    }
+    .formulario h1 {
+        font-size: 20px;
+        height: 37px;
+    }
+    .formulario #datos input[type="text"] {
+        width: 98%;
+    }
+    .formulario #datos .doble div {
+        width: 98%;
+    }
+}
+@media only screen and (max-width: 375px){
+    .texto #infa {
+        width: 81%;
+    }
+    .texto .imagenpc {
+        margin-inline-start: 13%;
+    }
+    .suma_c {
+        margin-left: 14%;
+    }
+    .formulario {
+        min-width: 322px;
+    }
+}

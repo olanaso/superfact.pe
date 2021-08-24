@@ -2,22 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,400,500,700,900');
 @font-face {
     font-family: "Open Sans Hebrew";
-    src: url("fonts/opensanshebrew-regular.ttf");
+    src: url("../fonts/opensanshebrew-regular.ttf");
 }
 @font-face {
     font-family: "Baloo";
-    src: url("fonts/Baloo-Regular.ttf");
+    src: url("../fonts/Baloo-Regular.ttf");
 }
 
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
-    /*
-	font-family: 'Poppins', sans-serif;
-    */
     font-family: "Open Sans Hebrew";
 	font-size: 15px;
 	line-height: 1;
@@ -43,10 +39,18 @@ button{
     cursor: pointer;
 }
 /*HEADER*/
-
-.header{
+header{
     position: sticky;
     top: 0;
+    z-index: 10;
+    width: auto;
+}
+header.sticky .header{
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    transition: 0.6s;
+}
+.header{
     background-color: #F10A50;
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -54,28 +58,142 @@ button{
     padding-inline-end: 230px;
     padding-block-start: 19px;
     padding-block-end: 19px;
-    z-index: 10;
+    transition: .6s;
 }
 .header_logo img{
     width: 130px;
 }
 .header_navigation{
     margin: auto 0;
+    transition: .6s;
 }
 .header_navigation ul{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     text-align: center;
-
 }
-.header_navigation ul li{
+.header_navigation ul li a{
     list-style: none;
     color: white;
     font-weight: 700;
     cursor: pointer;
 }
-.header_navigation li:hover{
+.header_navigation li a:hover{
     color: #DFE351;
+}
+
+/*MENU*/
+.menu_container{
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 250px;
+	height: 100vh;
+	background: #faebeb;
+	z-index: 1000;
+	opacity: 0;
+	-webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+	-moz-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+	-ms-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+	-o-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+	transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.menu_container_active{
+	right: 0;
+	opacity: 1;
+}
+.menu
+{
+	width: 100%;
+	height: 100%;
+}
+.menu_close
+{
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	cursor: pointer;
+}
+.menu_close i
+{
+	font-size: 28px;
+}
+.menu_close:hover i
+{
+	color: #E0212F;
+}
+.menu ul
+{
+	padding-top: 115px;
+    padding-right: 0px;
+    list-style-type: none;
+}
+.menu ul li
+{
+	position: relative;
+    display: block;
+    text-align: right;
+    animation: all 10s;
+}
+.menu ul li::after
+{
+	display: block;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: -10px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background:  #1d3784;
+	content: '';
+}
+.menu ul li.active a
+{
+	font-weight: 700;
+}
+.menu ul li a
+{
+	color: #E0212F;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu ul li a::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 250ms ease;
+    z-index: -1;
+}
+.menu ul li a:hover
+{
+	color: white;
+    transition: .8s;
+}
+.menu ul li a:hover::before
+{
+    width: 100%;
+    height: 100%;
+    background-color: #E0212F;
+    transition: width 250ms ease;
 }
 
 /*COVER PAGE*/
@@ -419,202 +537,17 @@ button{
     color: white;
 }
 
-/***RESPONSIVE***/
-
-@media only screen and (max-width: 1192px){
-    .header{
-        padding-inline-start: 150px;
-        padding-inline-end: 150px;
-    }
-    .coverPage{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .benefits_content{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }    
-    .billing{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .digitalProducts{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .pointOfSales_content, .pointOfSalesCarousel_content{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .footer{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-}
-@media only screen and (max-width: 970px){
-    .header{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .coverPage{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .coverPage_form::before{
-        display: none;
-    }
-    .benefits_content{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }  
-    .billing{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .digitalProducts{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .pointOfSales_content, .pointOfSalesCarousel_content{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .footer{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .footer_content1 p{
-        font-size: 15px;
-        line-height: 2;
-    }
-    .footer_content1_logo img{
-        width: 100px;
-    }
-    .footer_content_copyright{
-        font-size: 15px;
-    }
-    .footer_content2 ul li{
-        font-size: 15px;
-    }
-
-}
-@media only screen and (max-width: 840px){
-    .header_navigation{
-        display: none;
-    }
-    .pointOfSales_content{
-        grid-template-columns: 1fr;
-        height: auto;
-        padding-bottom: 50px;
-    }
-    .pointOfSales_content_img{
-        display: none;
-    }
-}
-@media only screen and (max-width: 768px){
-    .coverPage{
-        grid-template-columns: 1fr;
-    }
-    .coverPage_form{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .benefits_content_list{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .billing h1{
-        margin-bottom: 15px;
-    }
-    .billing_content{
-        grid-template-columns: 1fr;
-    }
-    .footer_content{
-        grid-template-columns: 1fr;
-    }
-    .footer_content1_social ul{
-        padding: 20px 0;
-    }
-    .footer_content1_logo{
-        text-align: start;
-        padding-top: 20px;
-    }
-    .footer_content2{
-        grid-template-columns: 1fr;
-    }
-}
-@media only screen and (max-width: 654px){
-    .coverPage_form{
-        padding: 0;
-    }
+.hamburger_container {
+    display: none;
+    cursor: pointer;
+    flex-basis: 40px;
+    text-align: right;
 }
 
-@media only screen and (max-width: 540px){
-    .benefits_content_list{
-        grid-template-columns: repeat(2, 1fr);
-    }
+.hamburger_container i{
+    font-size: 33px;
 }
-
-@media only screen and (max-width: 480px){
-    .header{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-    .coverPage{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-    .coverPage_form::before{
-        display: none;
-    }
-    .benefits_content{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }  
-    .billing{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-    .digitalProducts{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-    .pointOfSales_content, .pointOfSalesCarousel_content{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-    .footer{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-}
-@media only screen and (max-width: 320px){
-
-    .coverPage_form h2{
-        font-size: 15px;
-    }
-    .coverPage_form form{
-        padding: 20px 25px;
-    }
-    .coverPage_form .form input{
-        font-size: 15px;
-    }
-    .benefits_content_list{
-        grid-template-columns: 1fr;
-    }
-    .footer_content1_social ul{
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .footer_content{
-        overflow: hidden;
-    }
-    .footer_content1_social ul li{
-        margin: 10px;
-    }
-    .digitalProducts_carousel button{
-        width: 100%;
-    }
-    .pointOfSalesCarousel_content button{
-        width: 100%;
-    }
+.hamburger_container i:hover
+{
+    color: darkred;
 }
