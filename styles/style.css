@@ -76,6 +76,8 @@ header.sticky .header{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     text-align: center;
+	max-width: 600px;
+    float: right;
 }
 .header_navigation ul li a{
     list-style: none;
