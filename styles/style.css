@@ -208,11 +208,13 @@ header.sticky .header{
 /*COVER PAGE*/
 
 .coverPage{
+
+ 
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-inline-start: 300px;
     padding-inline-end: 300px;
-	grid-auto-rows: minmax(100px, 1100px);
     padding-block-start: 28px;
     padding-block-end: 15px;
     background-color: #faebeb;
@@ -397,7 +399,7 @@ header.sticky .header{
 .digitalProducts_carousel button{
     background-color: black;
     color: white;
-    width: 150px;
+    width: 200px;
     padding: 8px;
     font-size: 18px;
     font-weight: 700;
