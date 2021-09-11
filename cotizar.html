@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reponsive.css">
     <link rel="stylesheet" href="./styles/cotizar.css">
-
 </head>
 <body>
-
     <!--- Header -->
     <header>
         <div class="header">
-            <!--logo-->
-            <div class="header_logo">
-                <img src="./images/svg/logo.svg" alt="logo SuperFACT">
-            </div>
-            <!--navigation-->
-            <nav class="header_navigation">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Beneficios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="cotizar.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger_container">
-                <i class="fas fa-bars"></i>
+            <div class="content">
+                <!--logo-->
+                <div class="header_logo">
+                    <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+                </div>
+                <!--navigation-->
+                <nav class="header_navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Beneficios</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="cotizar.html">Contáctanos</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger_container">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -53,81 +53,84 @@
      <!--Cotizar-->
      <div class="contact" id="divContactanos">
         <div class="fondocirc">
-            <div class="centro">
-                <div class="texto">
-                    <div id="infa">
-                        <h1>SISTEMA DE VENTAS PARA TODO TIPO DE NEGOCIO</h1>
-                        <p>Mejor gestión más ventas, con un sistema de ventas hazlo posible</p>
+            <div class="content">
+
+                <div class="centro">
+                    <div class="texto">
+                        <div id="infa">
+                            <h1>SISTEMA DE VENTAS PARA TODO TIPO DE NEGOCIO</h1>
+                            <p>Mejor gestión más ventas, con un sistema de ventas hazlo posible</p>
+                        </div>
+                        <div class="imagenpc">
+                            <img src="./images/compu.png" alt="compu">
+                        </div>
+                        <div class="suma_c">
+                            <div id="caja_U">
+                                <h2>Punto de Ventas <br>FULL EQUIPO</h2>
+                            </div>
+                            <div id="caja_D">
+                                <h2>+</h2>
+                            </div>
+                            <div id="caja_T">
+                                <h2>Facturación <br>Electrónica</h2>
+                            </div>
+                        </div>
                     </div>
-                    <div class="imagenpc">
-                        <img src="./images/compu.png" alt="compu">
-                    </div>
-                    <div class="suma_c">
-                        <div id="caja_U">
-                            <h2>Punto de Ventas <br>FULL EQUIPO</h2>
+                    <!--Fromulario-->
+                    <div class="formulario">
+                        <div>
+                            <h1>COTIZAR SERVICIO</h1>
                         </div>
-                        <div id="caja_D">
-                            <h2>+</h2>
-                        </div>
-                        <div id="caja_T">
-                            <h2>Facturación <br>Electrónica</h2>
-                        </div>
-                    </div>
-                </div>
-                <!--Fromulario-->
-                <div class="formulario">
-                    <div>
-                        <h1>COTIZAR SERVICIO</h1>
-                    </div>
-                    <div id="datos">
-                        <label style="font-size: 13px; color: #FCFFA1;">Nombres y
-                            Apellidos:</label>
-                        <input type="text">
-                        <div class="doble">
-                            <div>
-                                <label style="font-size: 13px; color: #FCFFA1;">Correo:</label>
-                                <input type="text">
+                        <div id="datos">
+                            <label style="font-size: 13px; color: #FCFFA1;">Nombres y
+                                Apellidos:</label>
+                            <input type="text">
+                            <div class="doble">
+                                <div>
+                                    <label style="font-size: 13px; color: #FCFFA1;">Correo:</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label style="font-size: 13px; color: #FCFFA1;">Celular:</label>
+                                    <input type="text">
+                                </div>
                             </div>
-                            <div>
-                                <label style="font-size: 13px; color: #FCFFA1;">Celular:</label>
-                                <input type="text">
+                            <div class="doble">
+                                <div>
+                                    <label style="font-size: 13px; color: #FCFFA1;">Razón
+                                        Social:</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label style="font-size: 13px; color: #FCFFA1;">Nombre de tu
+                                        negocio:</label>
+                                    <input type="text">
+                                </div>
                             </div>
+                            <div class="doble">
+                                <div>
+                                    <label style="font-size: 13px; color: #FCFFA1;">Razón
+                                        Social:</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label style="font-size: 13px; color: #FCFFA1;">Nombre de tu
+                                        negocio:</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <label style="font-size: 13px; color: #FCFFA1;">Seleccione el Producto Interesado</label>
+                            <select name="" id="">
+                                <option value="Punto de Venta Full equipo">Punto de Venta Full equipo + Facturacion electronica</option>
+                                <option value="">Software Punto de venta, Facturacion Electronica</option>
+                            </select>
+                            <div id="chekbox">
+                                <input type="checkbox" id="check">
+                                <label style="font-size: 11px; line-height: 129.9%; color: white; margin-left: 10px;">Acepto compartir mis datos personales con la siguiente
+                                    lista de empresas SuperFact. Puedes acceder al listado aquí.*</label>
+                            </div>
+                            <input type="button" value="Solicitar">
                         </div>
-                        <div class="doble">
-                            <div>
-                                <label style="font-size: 13px; color: #FCFFA1;">Razón
-                                    Social:</label>
-                                <input type="text">
-                            </div>
-                            <div>
-                                <label style="font-size: 13px; color: #FCFFA1;">Nombre de tu
-                                    negocio:</label>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="doble">
-                            <div>
-                                <label style="font-size: 13px; color: #FCFFA1;">Razón
-                                    Social:</label>
-                                <input type="text">
-                            </div>
-                            <div>
-                                <label style="font-size: 13px; color: #FCFFA1;">Nombre de tu
-                                    negocio:</label>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <label style="font-size: 13px; color: #FCFFA1;">Seleccione el Producto Interesado</label>
-                       <select name="" id="">
-                            <option value="Punto de Venta Full equipo">Punto de Venta Full equipo + Facturacion electronica</option>
-                            <option value="">Software Punto de venta, Facturacion Electronica</option>
-                       </select>
-                        <div id="chekbox">
-                            <input type="checkbox" id="check">
-                            <label style="font-size: 11px; line-height: 129.9%; color: white; margin-left: 10px;">Acepto compartir mis datos personales con la siguiente
-                                lista de empresas SuperFact. Puedes acceder al listado aquí.*</label>
-                        </div>
-                        <input type="button" value="Solicitar">
                     </div>
                 </div>
             </div>
@@ -136,61 +139,63 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer_content">
-            <div class="footer_content1">
-                <div class="footer_content1_logo">
-                    <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+        <div class="content">
+            <div class="footer_content">
+                <div class="footer_content1">
+                    <div class="footer_content1_logo">
+                        <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+                    </div>
+                    <p>Software especializado para la emsión y declaración de comprobantes electrónicos en SUNAT</p>
+                    <div class="footer_content1_social">
+                        <ul>
+                            <li><a href="#!"><img src="./images/svg/logo-de-facebook.svg" alt=""></a></li>
+                            <li><a href="#!"><img src="./images/svg/instagram.svg" alt=""></a></li>
+                            <li><a href="#!"><img src="./images/svg/whatsapp.svg" alt=""></a></li>
+                            <li><a href="#!"><img src="./images/svg/correo-electronico-vacio.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_content_copyright">Copyright &copy; SuperFact 2021</div>
                 </div>
-                <p>Software especializado para la emsión y declaración de comprobantes electrónicos en SUNAT</p>
-                <div class="footer_content1_social">
-                    <ul>
-                        <li><a href="#!"><img src="./images/svg/logo-de-facebook.svg" alt=""></a></li>
-                        <li><a href="#!"><img src="./images/svg/instagram.svg" alt=""></a></li>
-                        <li><a href="#!"><img src="./images/svg/whatsapp.svg" alt=""></a></li>
-                        <li><a href="#!"><img src="./images/svg/correo-electronico-vacio.svg" alt=""></a></li>
-                    </ul>
-                </div>
-                <div class="footer_content_copyright">Copyright &copy; SuperFact 2021</div>
-            </div>
-            <div class="footer_content2">
-                <!-- content 1-->
-                <div>
-                    <div class="footer_content2_title">Comprobantes electrónicos</div>
-                    <ul>
-                        <li><a href="#!">Boletas de venta</a></li>
-                        <li><a href="#!">Facturas</a></li>
-                        <li><a href="#!">Notas de Crédito</a></li>
-                        <li><a href="#!">Notas de Débito</a></li>
-                    </ul>
-                </div>
-                <!-- content 2-->
-                <div>
-                    <div class="footer_content2_title">Adicionales</div>
-                    <ul>
-                        <li><a href="#!">Graficos y ratios aplicados a las ventas</a></li>
-                        <li><a href="#!">Adicion de multiples usuarios</a></li>
-                        <li><a href="#!">Comprobantes INAFECTOS Y EXONERADOS</a></li>
-                        <li><a href="#!">Comprobantes con DESCUENTOS</a></li>
-                        <li><a href="#!">Correos electrónicos automatizados</a></li>
-                      </ul>
-                </div>
-                <!-- content 3-->
-                <div>
-                    <div class="footer_content2_title">Administración</div>
-                    <ul>
-                        <li><a href="#!">Clientes</a></li>
-                        <li><a href="#!">Productos</a></li>
-                        <li><a href="#!">Unidades de medida</a></li>
-                        <li><a href="#!">Series y correlativos</a></li>
-                    </ul>
-                </div>
-                <!-- content 4-->
-                <div>
-                    <div class="footer_content2_title">Contáctanos</div>
-                    <ul>
-                        <li><a href="#!">Correo: administrador@fasteinvoice.com</a></li>
-                        <li><a href="#!">Teléfono: 923 556 614</a></li>
-                      </ul>
+                <div class="footer_content2">
+                    <!-- content 1-->
+                    <div>
+                        <div class="footer_content2_title">Comprobantes electrónicos</div>
+                        <ul>
+                            <li><a href="#!">Boletas de venta</a></li>
+                            <li><a href="#!">Facturas</a></li>
+                            <li><a href="#!">Notas de Crédito</a></li>
+                            <li><a href="#!">Notas de Débito</a></li>
+                        </ul>
+                    </div>
+                    <!-- content 2-->
+                    <div>
+                        <div class="footer_content2_title">Adicionales</div>
+                        <ul>
+                            <li><a href="#!">Graficos y ratios aplicados a las ventas</a></li>
+                            <li><a href="#!">Adicion de multiples usuarios</a></li>
+                            <li><a href="#!">Comprobantes INAFECTOS Y EXONERADOS</a></li>
+                            <li><a href="#!">Comprobantes con DESCUENTOS</a></li>
+                            <li><a href="#!">Correos electrónicos automatizados</a></li>
+                        </ul>
+                    </div>
+                    <!-- content 3-->
+                    <div>
+                        <div class="footer_content2_title">Administración</div>
+                        <ul>
+                            <li><a href="#!">Clientes</a></li>
+                            <li><a href="#!">Productos</a></li>
+                            <li><a href="#!">Unidades de medida</a></li>
+                            <li><a href="#!">Series y correlativos</a></li>
+                        </ul>
+                    </div>
+                    <!-- content 4-->
+                    <div>
+                        <div class="footer_content2_title">Contáctanos</div>
+                        <ul>
+                            <li><a href="#!">Correo: info@superfact.pe</a></li>
+                            <li><a href="#!">Teléfono: 978 868 159</a></li>
+                          </ul>
+                    </div>
                 </div>
             </div>
         </div>

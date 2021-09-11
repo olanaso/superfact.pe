@@ -23,6 +23,8 @@ body{
 
 h1{
     color: #F10A50;
+    font-size: 30px;
+    font-weight: 600;
 }
 ul li{
     list-style: none;
@@ -50,19 +52,24 @@ header{
     z-index: 10;
     width: auto;
 }
-header.sticky .header{
+header.sticky .header .content{
     padding-block-start: 10px;
     padding-block-end: 10px;
     transition: 0.6s;
 }
+/*general*/
+.content{
+    max-inline-size: 1255px;
+    margin: auto;
+    padding-inline: 300px;
+}
 .header{
     background-color: #F10A50;
+}
+.header .content{
     display: grid;
     grid-template-columns: 250px 1fr;
-    padding-inline-start: 275px;
-    padding-inline-end: 230px;
-    padding-block-start: 19px;
-    padding-block-end: 19px;
+    padding-block: 19px;
     transition: .6s;
 }
 .header_logo img{
@@ -70,14 +77,12 @@ header.sticky .header{
 }
 .header_navigation{
     margin: auto 0;
-    transition: .6s;
 }
 .header_navigation ul{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     text-align: center;
-	max-width: 600px;
-    float: right;
+    font-size: .9em;
 }
 .header_navigation ul li a{
     list-style: none;
@@ -89,7 +94,6 @@ header.sticky .header{
 .header_navigation li a:hover{
     color: #DFE351;
 }
-
 /*MENU*/
 .menu_container{
 	position: fixed;
@@ -204,20 +208,29 @@ header.sticky .header{
     background-color: #E0212F;
     transition: width 250ms ease;
 }
+.hamburger_container{
+    display: none;
+    cursor: pointer;
+    flex-basis: 40px;
+    text-align: right;
+}
+.hamburger_container i{
+    font-size: 33px;
+}
+.hamburger_container i:hover
+{
+    color: darkred;
+}
 
 /*COVER PAGE*/
-
 .coverPage{
-
- 
-
+    background-color: #faebeb;
+}
+.coverPage .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-inline-start: 300px;
-    padding-inline-end: 300px;
     padding-block-start: 28px;
     padding-block-end: 15px;
-    background-color: #faebeb;
     gap: 45px;
 }
 .coverPage_img{
@@ -226,57 +239,61 @@ header.sticky .header{
 .coverPage img{
     width: 90%;
 }
-.coverPage_info h1{
-    padding-bottom: 5px;
-}
 .coverPage_info p{
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 5px;
+    font-weight: bold;
 }
-.coverPage_form{
-    position: relative;
-    margin: 0 auto;
+.coverPage h1{
+    padding-bottom: 10px;
 }
 .coverPage_form h2{
     position: relative;
     color: white;
     background-color: #F10A50;
-    padding: 12px 0;
+    padding: 13px 0;
     border-radius: 40px 40px 0 0;
     text-align: center;
+    font-size: 20px;
+}
+.coverPage_form .form{
+    position: relative;
+    margin: auto;
+    width: 350px;
+    height: 320px;
 }
 .coverPage_form form{
     position: relative;
+    padding: 20px 40px;
     background-color: #131313;
     border-radius: 0 0 40px 40px;
-    padding: 20px 45px;
 }
-.coverPage_form form input{
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 5px 10px;
+.coverPage_form .form input{
+    display: block;
+    width: auto;
+    padding: 3px 10px;
     font-size: 1em;
+    margin-bottom: 10px;
 }
 .coverPage_form button{
     background-color: #32A193;
     color: white;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin: 10px 0;
 }
-.coverPage_form::before{
+.coverPage_form .form::before{
     content: '';  
     position: absolute;
     background-image: url(../images/fond-form.png);
     left: 15px;
     top: -10px;
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    
 }
-
 /*BENEFITS*/
 
 .benefits{
@@ -284,6 +301,7 @@ header.sticky .header{
     width: 100%;
     background: #131313;
 }
+
 .benefits::before{
     position: absolute;
     content: '';
@@ -291,21 +309,17 @@ header.sticky .header{
     height: 100%;
     background-image: url(../images/benefits\ image.png);
     background-repeat: no-repeat;
-   background-size: cover;
+    background-size: cover;
     background-position: center;
     opacity: .2;
 }
+
 .benefits h1{
     padding-bottom: 35px;
-    font-weight: 600;
-    font-size: 30px;
 }
 .benefits_content{
     position: relative;
-    padding-inline-start: 300px;
-    padding-inline-end: 300px;
-    padding-block-start: 28px;
-    padding-block-end: 28px;
+    padding-block: 28px;
 }
 .benefits_content_list{
     display: grid;
@@ -320,7 +334,7 @@ header.sticky .header{
 .benefits p{
     color: white;
     margin-top: 16px;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 .benefits .icon img{
     width: 70px;
@@ -330,8 +344,6 @@ header.sticky .header{
 /*BILLING*/
 
 .billing{
-    padding-inline-start: 300px;
-    padding-inline-end: 300px;
     padding-block-start: 28px;
     padding-block-end: 28px;
 }
@@ -339,17 +351,14 @@ header.sticky .header{
     display: grid;
     grid-template-columns: 60% 40%;
     gap: 30px;
-    margin: auto;
-
 }
 .billing_content_info{
     margin: auto;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    padding-left: 20px;
 }
 .billing h1{
     color: black;
-    font-weight: 700;
-    font-size: 30px;
 }
 .billing_content ul{
     padding: 5px 0;
@@ -377,14 +386,13 @@ header.sticky .header{
 /*DIGITAL PRODUCTS*/
 
 .digitalProducts{
-    padding-inline-start: 300px;
-    padding-inline-end: 300px;
     padding-block-start: 15px;
     padding-block-end: 15px;
     background-color: #FBE9E9;
     background-image: url(../images/svg/productos-vector.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
 }
 .digitalProducts h1{
     color: black;
@@ -412,11 +420,9 @@ header.sticky .header{
     width: 300px;
     height: 200px;
 }
-
 .carousel {
     width: 500px;
 }
-
 .carousel img {
     width: 100%;
 }
@@ -424,11 +430,11 @@ header.sticky .header{
 /*POINT OF SALES CONTENT*/
 
 .pointOfSales_content{
-    padding-inline-start: 300px;
-    padding-inline-end: 300px;
     padding-block-start: 15px;
     padding-block-end: 15px;
     background: #131313;
+}
+.pointOfSales_content .content{
     display: grid;
     grid-template-columns: 60% 40%;
     height: 150px;
@@ -437,8 +443,6 @@ header.sticky .header{
     color: #BCE90A;
 }
 .pointOfSales h1{
-    font-size: 30px;
-    font-weight: 500;
     padding-bottom: 15px;
 }
 .pointOfSales p{
@@ -457,21 +461,24 @@ header.sticky .header{
 .pointOfSalesCarousel{
     position: relative;
     background-color: #D21523;
-    height: 270px;
+    height: auto;
 }
-.pointOfSalesCarousel_content {
-    position: relative;
-    height: 100%;
+.pointOfSalesCarousel_content::before{
+    content: '';
+    position: absolute;
+    height: 116%;
+    width: 100%;
     background-image: url(../images/svg/Potencia-punto-ventas-vector.svg);
     background-repeat: no-repeat;
     background-size: cover;
     top: -55px;
-    padding-block-start: 75px;
-    padding-inline-start: 300px;
-    padding-inline-end: 300px;
-    text-align: center;
 }
-
+.pointOfSalesCarousel_content .content{
+    text-align: center;
+    padding-block-start: 75px;
+    padding-block-end: 50px;
+    position: relative;
+}
 .pointOfSalesCarousel_content button {
     background-color: #32A193;
     color: white;
@@ -503,12 +510,10 @@ header.sticky .header{
 /*FOOTER+*/
 
 .footer{
-    padding-inline-start: 300px;
-    padding-inline-end: 300px;
+    font-family: 'Poppins', sans-serif;
     padding-block-end: 0px;
     background-color: #131313;
 }
-
 .footer_content{
     position: relative;
     display: grid;
@@ -519,9 +524,10 @@ header.sticky .header{
     padding: 20px 25px;
     color: white;
     top: -20px;
+    max-inline-size: 1158px;
 }
 .footer_content1 p{
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
 }
 .footer_content1_logo{
@@ -541,47 +547,31 @@ header.sticky .header{
     width: 30px;
 }
 .footer_content_copyright{
-    font-size: 12px;
+    font-size: 10px;
 }
 .footer_content1_social img{
     width: 30px;
     margin: 0;
     padding: 0;
 }
+.footer_content2_title {
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
 .footer_content2{
-    width: 100%;
     display: grid;
     grid-template-columns: 45% 45%;
-    line-height: 2.5;
 }
 .footer_content2 ul li{
-    font-size: 13px;
+    font-size: 10px;
     margin: 10px 0;
     line-height: 1.5;
 }
 .footer_content2 ul li a{
     color: #909090;
 }
+
 .footer_content2 ul li a:hover{
     color: white;
-}
-
-.hamburger_container {
-    display: none;
-    cursor: pointer;
-    flex-basis: 40px;
-    text-align: right;
-}
-
-.hamburger_container i{
-    font-size: 33px;
-}
-.hamburger_container i:hover
-{
-    color: darkred;
-}
-.footer_content2_title {
-    font-size: 15px;
-    line-height: 16px;
-    margin: 10px 0;
 }

@@ -1,89 +1,35 @@
-
 /***RESPONSIVE***/
-
 @media only screen and (max-width: 1192px){
-    .header{
+    .content{
         padding-inline-start: 150px;
         padding-inline-end: 150px;
     }
-    .coverPage{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .benefits_content{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }    
-    .billing{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .digitalProducts{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .pointOfSales_content, .pointOfSalesCarousel_content{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
-    .pointOfSalesCarousel_content_items img {
-        width: 138px;
-    }
-    .footer{
-        padding-inline-start: 180px;
-        padding-inline-end: 180px;
-    }
 }
 @media only screen and (max-width: 970px){
-    .header{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .coverPage{
+    .content{
         padding-inline-start: 80px;
         padding-inline-end: 80px;
     }
     .coverPage_form::before{
         display: none;
     }
-    .benefits_content{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }  
-    .billing{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .digitalProducts{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
-    .pointOfSales_content, .pointOfSalesCarousel_content{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
     .pointOfSalesCarousel_content_items img {
         width: 90px;
         height: 90px;
     }
-    .footer{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
-    }
     .footer_content1 p{
-        font-size: 15px;
+        font-size: 13px;
         line-height: 2;
     }
     .footer_content1_logo img{
         width: 100px;
     }
     .footer_content_copyright{
-        font-size: 15px;
+        font-size: 13px;
     }
     .footer_content2 ul li{
-        font-size: 15px;
+        font-size: 13px;
     }
-
 }
 @media only screen and (max-width: 840px){
     .header_navigation {
@@ -94,7 +40,7 @@
         justify-content: flex-end;
         align-items: center;
     }
-    .pointOfSales_content {
+    .pointOfSales_content .content{
         grid-template-columns: 1fr;
         height: auto;
         padding-bottom: 50px;
@@ -108,12 +54,8 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    .coverPage{
+    .coverPage .content{
         grid-template-columns: 1fr;
-    }
-    .coverPage_form{
-        padding-inline-start: 80px;
-        padding-inline-end: 80px;
     }
     .benefits_content_list{
         grid-template-columns: repeat(3, 1fr);
@@ -139,9 +81,6 @@
     }
 }
 @media only screen and (max-width: 655px){
-    .coverPage_form{
-        padding: 0;
-    }
     .carousel {
         width: 100%;
     }
@@ -156,48 +95,27 @@
     }
 }
 @media only screen and (max-width: 480px){
-    .header{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-    .coverPage{
+    .content{
         padding-inline-start: 16px;
         padding-inline-end: 16px;
     }
     .coverPage_form::before{
         display: none;
     }
-    .benefits_content{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }  
-    .billing{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
+}
+@media only screen and (max-width: 395px){
+    .header .content{
+        grid-template-columns: auto 1fr;
     }
-    .digitalProducts{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
+    .coverPage_form .form{
+        width: auto;
+        height: auto;
     }
-    .pointOfSales_content, .pointOfSalesCarousel_content{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
-    }
-    .footer{
-        padding-inline-start: 16px;
-        padding-inline-end: 16px;
+    .coverPage_form .form input{
+        width: 90%;
     }
 }
 @media only screen and (max-width: 320px){
-    .coverPage_form h2{
-        font-size: 15px;
-    }
-    .coverPage_form form{
-        padding: 20px 25px;
-    }
-    .coverPage_form .form input{
-        font-size: 15px;
-    }
     .benefits_content_list{
         grid-template-columns: 1fr;
     }

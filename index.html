@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,28 +20,29 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reponsive.css">
 </head>
-
 <body>
 
     <!--- Header -->
     <header>
         <div class="header">
-            <!--logo-->
-            <div class="header_logo">
-                <img src="./images/svg/logo.svg" alt="logo SuperFACT">
-            </div>
-            <!--navigation-->
-            <nav class="header_navigation">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#digitalProducts">Productos</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="cotizar.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger_container">
-                <i class="fas fa-bars"></i>
+            <div class="content">
+                <!--logo-->
+                <div class="header_logo">
+                    <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+                </div>
+                <!--navigation-->
+                <nav class="header_navigation">
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="#">Beneficios</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="/cotizar.html">Contáctanos</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger_container">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -54,67 +54,72 @@
             </div>
             <ul class="menu_mm">
                 <li><a href="#!">Inicio</a></li>
-                <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#digitalProducts">Productos</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="cotizar.html">Contáctanos</a></li>
+                <li><a href="#!">Beneficios</a></li>
+                <li><a href="#!">Productos</a></li>
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Contáctanos</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Cover Page -->
     <div class="coverPage">
-        <div class="coverPage_info">
-            <div class="coverPage_info_text">
-                <h1>SISTEMA DE VENTAS PARA TODO TIPO DE NEGOCIO</h1>
-                <p><b>Mejor gestión de ventas, con un sistema de Ventas hazlo posible</b></p>
+        <div class="content">
+            <div class="coverPage_info">
+                <div class="coverPage_info_text">
+                    <h1>SISTEMA DE VENTAS PARA TODO TIPO DE NEGOCIO</h1>
+                    <p><b>Mejor gestión de ventas, con un sistema de Ventas hazlo posible</b></p>
+                </div>
+                <div class="coverPage_img">
+                    <img src="./images/computer.png" alt="">
+                </div>
             </div>
-            <div class="coverPage_img">
-                <img src="./images/computer.png" alt="">
-            </div>
-        </div>
+            
 
-        <div class="coverPage_form">
-            <div class="form">
-                <h2>COTIZAR SERVICIO</h2>
-                <form action="">
-                    <input type="text" placeholder="Nombres y Apellidos" required="required" name="nombre" id="nombre">
-                    <input type="tel" placeholder="Telefonos" requerid="required" data-error="valid phone number"
-                        name="telefeno" id="telefono">
-                    <input type="email" placeholder="correo" required="required"
-                        data-error="Valid email address is required." name="correo" id="correo">
-                    <input type="text" placeholder="Mensaje" required="requerid" name="message" name="messageinput"
-                        id="messageinput">
-                    <button type="submit">Solicitar</button>
-                </form>
+            <div class="coverPage_form">
+                <div class="form">
+                    <h2>COTIZAR SERVICIO</h2>
+                    <form action="">
+                        <input type="text" placeholder="Nombres y Apellidos" required="required" name="nombre" id="nombre">
+                        <input type="tel" placeholder="Telefonos" requerid="required" data-error="valid phone number" 
+                            name="telefeno" id="telefono">
+                        <input type="email" placeholder="correo" required="required"
+                            data-error="Valid email address is required." name="correo" id="correo">
+                        <input type="text" placeholder="Mensaje" required="requerid" name="message" name="messageinput"
+                            id="messageinput">
+                        <button type="submit">Solicitar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
+    
     <!-- Benefits-->
-    <div class="benefits" id="beneficios">
-        <div class="benefits_content">
-            <h1>Beneficios para tu negocio</h1>
-            <div class="benefits_content_list">
-                <div class="icon">
-                    <img src="./images/svg/cloud.svg" alt="">
-                    <p>Reportes en la Nube</p>
-                </div>
-                <div class="icon">
-                    <img src="./images/svg/envio.svg" alt="">
-                    <p>Envio automáticos calendarizados</p>
-                </div>
-                <div class="icon">
-                    <img src="./images/svg/check.svg" alt="">
-                    <p>Sistema completo y fácil de usar</p>
-                </div>
-                <div class="icon">
-                    <img src="./images/svg/agente.svg" alt="">
-                    <p>Soporte personal 24/7</p>
-                </div>
-                <div class="icon">
-                    <img src="./images/svg/actualization.svg" alt="">
-                    <p>Mejoras y actualizaciones continuas</p>
+    <div class="benefits">
+        <div class="content">
+            <div class="benefits_content">
+                <h1>Beneficios para tu negocio</h1>
+                <div class="benefits_content_list">
+                    <div class="icon">
+                        <img src="./images/svg/cloud.svg" alt="">
+                        <p>Reportes en la Nube</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./images/svg/envio.svg" alt="">
+                        <p>Envio automáticos calendarizados</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./images/svg/check.svg" alt="">
+                        <p>Sistema completo y Fácil de usar</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./images/svg/agente.svg" alt="">
+                        <p>Soporte perosnal 24/7</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./images/svg/actualization.svg" alt="">
+                        <p>Mejoras y actualizaciones continuas</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,153 +127,163 @@
 
     <!--Billing-->
     <div class="billing">
-        <h1>Facturación electrónica ilimitada</h1>
-        <div class="billing_content">
-            <div class="billing_content_info">
-                Emite boletas y facturas electrónicas los 7 días de la semana.
-                <ul>
-                    <li>Somos Proveedor de Servicios Electronicos - PSE</li>
-                    <li>Contamos con Operador de Servicios Eletronicos - OSE</li>
-                </ul>
-                <div>
-                    <img src="./images/sunat.png" alt="">
-                    <span>Resolución Nº 244-005-0000177/SUNAT</span>
+        <div class="content">
+            <h1>Facturación electrónica ilimitada</h1>
+            <div class="billing_content">
+                <div class="billing_content_info">
+                    Emite boletas y facturas electrónicas los 7 días de la semana.
+                    <ul>
+                        <li>Somos Proveedor de Servicios Electronicos - PSE</li>
+                        <li>Contamos con Operador de Servicios Eletronicos - OSE</li>
+                    </ul>
+                    <div>
+                        <img src="./images/sunat.png" alt="">
+                        <span>Resolución Nº 244-005-0000177/SUNAT</span>
+                    </div>
                 </div>
-            </div>
-            <div class="billing_content_image">
-                <img src="./images/sunat-total.png" alt="">
+                <div class="billing_content_image">
+                    <img src="./images/sunat-total.png" alt="">
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Digital products-->
-    <div class="digitalProducts" id="digitalProducts">
-        <h1>Sistema de Ventas y Equipos para punto de venta</h1>
-        <div class="digitalProducts_carousel">
+    <div class="digitalProducts">
+        <div class="content">
+            <h1>Sistemas de Ventas y Equipos para punto de venta</h1>
+            <div class="digitalProducts_carousel">
+    
+                <div class="carousel">
+                    <div>
+                        <img src="./images/producto1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./images/producto2.png" alt="">
+                    </div>
+                </div>
 
-            <div class="carousel">
-                <div>
-                    <img src="./images/producto1.png" alt="">
-                </div>
-                <div>
-                    <img src="./images/producto2.png" alt="">
-                </div>
+                <a href="cotizar.html"><button>Solicitar</button></a> 
             </div>
-
-           <a href="cotizar.html"> <button>Solicitar</button></a> 
         </div>
     </div>
 
     <!-- Point of sales -->
     <div class="pointOfSales">
         <div class="pointOfSales_content">
-            <div class="pointOfSales_content_info">
-                <h1>Potencia tu punto de Ventas con estos <span>Equipos</span></h1>
-                <p>Adquiere nuestros equipos para mejorar la gestion de los puntos de venta</p>
-            </div>
-            <div class="pointOfSales_content_img">
-                <img src="./images/woman.png" alt="">
+            <div class="content">
+                <div class="pointOfSales_content_info">
+                    <h1>Potencia tu punto de Ventas con estos <span>Equipos</span></h1>
+                    <p>Adquiere nuestros equipos para mejorar la gestion de los puntos de venta</p>
+                </div>
+                <div class="pointOfSales_content_img">
+                    <img src="./images/woman.png" alt="">
+                </div>
             </div>
         </div>
 
         <!-- Point of sales carousel -->
         <div class="pointOfSalesCarousel">
             <div class="pointOfSalesCarousel_content">
-                <div class="carousel-items">
-                    <div class="pointOfSalesCarousel_content_items">
-                        <img src="./images/Ticketeras.png" alt="">
-                        <p>Ticketeras</p>
-                    </div>
-                    <div class="pointOfSalesCarousel_content_items">
-                        <img src="./images/Gavetas de dinero.png" alt="">
-                        <p>Gavetas de dinero</p>
-                    </div>
-                    <div class="pointOfSalesCarousel_content_items">
-                        <img src="./images/Lectores de barra.png" alt="">
-                        <p>Lectores de Barra</p>
-                    </div>
-                    <div class="pointOfSalesCarousel_content_items">
-                        <img src="./images/Ticketeras.png" alt="">
-                        <p>Ticketeras</p>
-                    </div>
-                    <div class="pointOfSalesCarousel_content_items">
-                        <img src="./images/Gavetas de dinero.png" alt="">
-                        <p>Gavetas de dinero</p>
-                    </div>
-                    <div class="pointOfSalesCarousel_content_items">
-                        <img src="./images/Lectores de barra.png" alt="">
-                        <p>Lectores de Barra</p>
-                    </div>
+                <div class="content">
+                    <div class="carousel-items">
+                        <div class="pointOfSalesCarousel_content_items">
+                            <img src="./images/Ticketeras.png" alt="">
+                            <p>Ticketeras</p>
+                        </div>
+                        <div class="pointOfSalesCarousel_content_items">
+                            <img src="./images/Gavetas de dinero.png" alt="">
+                            <p>Gavetas de dinero</p>
+                        </div>
+                        <div class="pointOfSalesCarousel_content_items">
+                            <img src="./images/Lectores de barra.png" alt="">
+                            <p>Lectores de Barra</p>
+                        </div>
+                        <div class="pointOfSalesCarousel_content_items">
+                            <img src="./images/Ticketeras.png" alt="">
+                            <p>Ticketeras</p>
+                        </div>
+                        <div class="pointOfSalesCarousel_content_items">
+                            <img src="./images/Gavetas de dinero.png" alt="">
+                            <p>Gavetas de dinero</p>
+                        </div>
+                        <div class="pointOfSalesCarousel_content_items">
+                            <img src="./images/Lectores de barra.png" alt="">
+                            <p>Lectores de Barra</p>
+                        </div>
+                    </div> 
+                    
+                    <a href="cotizar.html"> <button>Solicitar</button></a> 
                 </div>
-
-                <a href="cotizar.html"> <button>Solicitar</button></a> 
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer_content">
-            <div class="footer_content1">
-                <div class="footer_content1_logo">
-                    <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+        <div class="content">
+            <div class="footer_content">
+                <div class="footer_content1">
+                    <div class="footer_content1_logo">
+                        <img src="./images/svg/logo.svg" alt="logo SuperFACT">
+                    </div>
+                    <p>Software especializado para la emsión y declaración de comprobantes electrónicos en SUNAT</p>
+                    <div class="footer_content1_social">
+                        <ul>
+                            <li><a href="#!"><img src="./images/svg/logo-de-facebook.svg" alt=""></a></li>
+                            <li><a href="#!"><img src="./images/svg/instagram.svg" alt=""></a></li>
+                            <li><a href="#!"><img src="./images/svg/whatsapp.svg" alt=""></a></li>
+                            <li><a href="#!"><img src="./images/svg/correo-electronico-vacio.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_content_copyright">Copyright &copy; SuperFact 2021</div>
                 </div>
-                <p>Software especializado para la emsión y declaración de comprobantes electrónicos en SUNAT</p>
-                <div class="footer_content1_social">
-                    <ul>
-                        <li><a href="#!"><img src="./images/svg/logo-de-facebook.svg" alt=""></a></li>
-                        <li><a href="#!"><img src="./images/svg/instagram.svg" alt=""></a></li>
-                        <li><a href="#!"><img src="./images/svg/whatsapp.svg" alt=""></a></li>
-                        <li><a href="#!"><img src="./images/svg/correo-electronico-vacio.svg" alt=""></a></li>
-                    </ul>
-                </div>
-                <div class="footer_content_copyright">Copyright &copy; SuperFact 2021</div>
-            </div>
-            <div class="footer_content2">
-                <!-- content 1-->
-                <div>
-                    <div class="footer_content2_title">Comprobantes electrónicos</div>
-                    <ul>
-                        <li><a href="#!">Boletas de venta</a></li>
-                        <li><a href="#!">Facturas</a></li>
-                        <li><a href="#!">Notas de Crédito</a></li>
-                        <li><a href="#!">Notas de Débito</a></li>
-                    </ul>
-                </div>
-                <!-- content 2-->
-                <div>
-                    <div class="footer_content2_title">Adicionales</div>
-                    <ul>
-                        <li><a href="#!">Graficos y ratios aplicados a las ventas</a></li>
-                        <li><a href="#!">Adicion de multiples usuarios</a></li>
-                        <li><a href="#!">Comprobantes INAFECTOS Y EXONERADOS</a></li>
-                        <li><a href="#!">Comprobantes con DESCUENTOS</a></li>
-                        <li><a href="#!">Correos electrónicos automatizados</a></li>
-                    </ul>
-                </div>
-                <!-- content 3-->
-                <div>
-                    <div class="footer_content2_title">Administración</div>
-                    <ul>
-                        <li><a href="#!">Clientes</a></li>
-                        <li><a href="#!">Productos</a></li>
-                        <li><a href="#!">Unidades de medida</a></li>
-                        <li><a href="#!">Series y correlativos</a></li>
-                    </ul>
-                </div>
-                <!-- content 4-->
-                <div>
-                    <div class="footer_content2_title">Contáctanos</div>
-                    <ul>
-                        <li><a href="#!">Correo: info@superfact.pe</a></li>
-                        <li><a href="#!">Teléfono: 978868159</a></li>
-                    </ul>
+                <div class="footer_content2">
+                    <!-- content 1-->
+                    <div>
+                        <div class="footer_content2_title">Comprobantes electrónicos</div>
+                        <ul>
+                            <li><a href="#!">Boletas de venta</a></li>
+                            <li><a href="#!">Facturas</a></li>
+                            <li><a href="#!">Notas de Crédito</a></li>
+                            <li><a href="#!">Notas de Débito</a></li>
+                        </ul>
+                    </div>
+                    <!-- content 2-->
+                    <div>
+                        <div class="footer_content2_title">Adicionales</div>
+                        <ul>
+                            <li><a href="#!">Graficos y ratios aplicados a las ventas</a></li>
+                            <li><a href="#!">Adicion de multiples usuarios</a></li>
+                            <li><a href="#!">Comprobantes INAFECTOS Y EXONERADOS</a></li>
+                            <li><a href="#!">Comprobantes con DESCUENTOS</a></li>
+                            <li><a href="#!">Correos electrónicos automatizados</a></li>
+                        </ul>
+                    </div>
+                    <!-- content 3-->
+                    <div>
+                        <div class="footer_content2_title">Administración</div>
+                        <ul>
+                            <li><a href="#!">Clientes</a></li>
+                            <li><a href="#!">Productos</a></li>
+                            <li><a href="#!">Unidades de medida</a></li>
+                            <li><a href="#!">Series y correlativos</a></li>
+                        </ul>
+                    </div>
+                    <!-- content 4-->
+                    <div>
+                        <div class="footer_content2_title">Contáctanos</div>
+                        <ul>
+                            <li><a href="#!">Correo: info@superfact.pe</a></li>
+                            <li><a href="#!">Teléfono: 978 868 159</a></li>
+                          </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/header.js"></script>
